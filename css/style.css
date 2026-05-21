@@ -409,7 +409,7 @@ body {
 
 .home-nav a:hover,
 .home-logo:hover {
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .home-hero {
@@ -639,18 +639,17 @@ body {
 }
 
 .client-logo {
-  width: 220px;
-  height: 120px;
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(75, 95, 75, 0.25);
-  border-radius: 999px;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #4b5f4b;
-  background: #ebe7dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 90px;
+  padding: 16px;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 @keyframes logoScroll {
@@ -717,8 +716,12 @@ footer {
     padding: 90px 24px;
   }
 
-  .client-logo {
-    width: 180px;
-    height: 100px;
+  .client-logo img {
+    max-width: 150px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
 }
