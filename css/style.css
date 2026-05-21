@@ -356,3 +356,9 @@
       height: 340px;
     }
   }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
