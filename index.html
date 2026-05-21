@@ -3,85 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RBGB | High-Performance Green Building Services</title>
+
+  <title>RBGB | High Performance Building Services</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Elegant serif font for Heatherwick-style headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <a href="index.html" class="logo">
-      <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
-    </a>
-
-    <nav class="nav">
+  <header class="home-header">
+    <nav class="home-nav">
       <a href="index.html">Home</a>
-
-      <div class="dropdown">
-        <a href="services.html">Services</a>
-        <div class="dropdown-menu">
-          <a href="services.html#leed">LEED Administration Plus</a>
-          <a href="services.html#commissioning">Commissioning</a>
-          <a href="services.html#energy-modeling">Energy Modeling</a>
-          <a href="services.html#energy-audits">Energy Audits</a>
-          <a href="services.html#facility-management">Sustainable Facility Management</a>
-          <a href="services.html#training">Training & Workshops</a>
-        </div>
-      </div>
-
+      <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="index.html" class="home-logo">RBGB</a>
   </header>
 
   <main>
-    <section class="hero-video-section">
+
+    <!-- HERO VIDEO SECTION -->
+    <section class="home-hero" id="top">
       <video autoplay muted loop playsinline class="hero-video">
-        <source src="assets/videos/officeview2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src="assets/videos/hero-video.mp4" type="video/mp4" />
       </video>
 
-      <div class="hero-overlay"></div>
+      <div class="hero-dark-overlay"></div>
 
-      <div class="hero-content">
-        <p class="eyebrow">High-Performance Building Consultancy</p>
-        <h1>Your partner for maximizing building performance.</h1>
+      <div class="hero-title-wrap">
+        <h1 class="rotating-title">
+          <span class="title-line active">Ross-Bain Green Buildings</span>
+          <span class="title-line">Your partner for maximizing building performance.</span>
+          <span class="title-line">Dedicated to achieving your sustainability goals.</span>
+        </h1>
+      </div>
+
+      <a href="#studio-intro" class="scroll-arrow" aria-label="Scroll down">
+        ↓
+      </a>
+    </section>
+
+
+    <!-- INTRO SECTION 1 -->
+    <section class="editorial-section" id="studio-intro">
+      <div class="editorial-text">
+        <h2>
+          We help create buildings that are
+          <span class="crayon-underline">efficient, resilient and deeply comfortable</span>
+        </h2>
         <p>
-          We help owners, architects, developers, and facility teams improve building performance
-          through sustainability strategy, commissioning, energy modeling, audits, and training.
+          Find out more about our approach
         </p>
-        <a href="services.html" class="button">Explore Services</a>
+      </div>
+
+      <div class="editorial-image">
+        <img src="assets/images/emory.jpg" alt="High performance sustainable building placeholder">
       </div>
     </section>
 
-    <section class="intro-section">
-      <div>
-        <h2>Improving building efficiency. Lowering operational costs.</h2>
+
+    <!-- INTRO SECTION 2 -->
+    <section class="editorial-section reverse">
+      <div class="editorial-image">
+        <img src="assets/images/worldofcoke.jpg" alt="Energy efficient building systems placeholder">
       </div>
-      <div>
+
+      <div class="editorial-text">
+        <h2>
+          We exist to make
+          <span class="crayon-underline">building performance easier to understand</span>
+          and easier to act on
+        </h2>
         <p>
-          From early-stage sustainability strategy to post-occupancy optimization, we support teams
-          in making buildings more efficient, resilient, comfortable, and easier to operate.
+          Explore our services
         </p>
       </div>
     </section>
 
-    <section class="feature-grid">
-      <article>
-        <h3>LEED & Sustainability</h3>
-        <p>Certification strategy, documentation support, and integrated sustainability coordination.</p>
-      </article>
 
-      <article>
-        <h3>Commissioning</h3>
-        <p>Systematic verification to ensure building systems perform as intended.</p>
-      </article>
+    <!-- SERVICES PREVIEW -->
+    <section class="home-services-preview">
+      <p class="section-kicker">Services</p>
 
-      <article>
-        <h3>Energy Modeling</h3>
-        <p>Performance simulation to guide design decisions, code compliance, and energy savings.</p>
-      </article>
+      <div class="service-preview-grid">
+        <a href="services.html#leed">LEED Administration Plus</a>
+        <a href="services.html#commissioning">Commissioning</a>
+        <a href="services.html#energy-modeling">Energy Modeling</a>
+        <a href="services.html#energy-audits">Energy Audits</a>
+        <a href="services.html#facility-management">Sustainable Facility Management</a>
+        <a href="services.html#training">Training & Workshops</a>
+      </div>
     </section>
+
+
+    <!-- ORGANIZATIONS SERVED -->
+    <section class="organizations-section">
+      <h2>Organizations we have served</h2>
+
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <div class="client-logo">Client 01</div>
+          <div class="client-logo">Client 02</div>
+          <div class="client-logo">Client 03</div>
+          <div class="client-logo">Client 04</div>
+          <div class="client-logo">Client 05</div>
+          <div class="client-logo">Client 06</div>
+
+          <!-- repeated once for smooth horizontal scroll -->
+          <div class="client-logo">Client 01</div>
+          <div class="client-logo">Client 02</div>
+          <div class="client-logo">Client 03</div>
+          <div class="client-logo">Client 04</div>
+          <div class="client-logo">Client 05</div>
+          <div class="client-logo">Client 06</div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>

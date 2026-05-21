@@ -362,3 +362,363 @@
     width: auto;
     display: block;
   }
+
+  /* ================================
+   HOME PAGE — HEATHERWICK-STYLE
+================================ */
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f4f2ec;
+  color: #172017;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  color: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.home-nav,
+.home-logo {
+  pointer-events: auto;
+}
+
+.home-nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.home-nav a,
+.home-logo {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+}
+
+.home-nav a:hover,
+.home-logo:hover {
+  opacity: 0.65;
+}
+
+.home-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 720px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  z-index: 1;
+}
+
+.hero-title-wrap {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: min(92vw, 1200px);
+  padding: 0 24px;
+}
+
+.rotating-title {
+  position: relative;
+  min-height: 130px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.title-line {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(6px);
+  transition:
+    opacity 900ms ease,
+    transform 900ms ease,
+    filter 900ms ease;
+}
+
+.title-line.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.scroll-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  animation: bounceArrow 1.5s infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 12px);
+  }
+}
+
+
+/* Editorial image + text sections */
+
+.editorial-section {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 80px;
+  align-items: center;
+  padding: 110px 48px;
+  background: #f4f2ec;
+}
+
+.editorial-section.reverse {
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+.editorial-text {
+  max-width: 620px;
+  justify-self: center;
+}
+
+.editorial-text h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 5.5vw, 5.8rem);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  color: #4b5f4b;
+}
+
+.editorial-text p {
+  margin-top: 26px;
+  font-size: 1.05rem;
+  color: #4b5f4b;
+}
+
+.editorial-image img {
+  width: 100%;
+  height: 72vh;
+  object-fit: cover;
+}
+
+
+/* Crayon-style underline */
+
+.crayon-underline {
+  position: relative;
+  display: inline;
+  background-image:
+    linear-gradient(
+      transparent 58%,
+      rgba(75, 95, 75, 0.16) 58%,
+      rgba(75, 95, 75, 0.16) 78%,
+      transparent 78%
+    );
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+
+/* Services preview */
+
+.home-services-preview {
+  padding: 120px 48px;
+  background: #ebe7dc;
+}
+
+.section-kicker {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  margin-bottom: 52px;
+  color: #4b5f4b;
+}
+
+.service-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(75, 95, 75, 0.25);
+  border-left: 1px solid rgba(75, 95, 75, 0.25);
+}
+
+.service-preview-grid a {
+  min-height: 180px;
+  padding: 32px;
+  display: flex;
+  align-items: flex-end;
+  border-right: 1px solid rgba(75, 95, 75, 0.25);
+  border-bottom: 1px solid rgba(75, 95, 75, 0.25);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #4b5f4b;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.service-preview-grid a:hover {
+  background: #4b5f4b;
+  color: #f4f2ec;
+}
+
+
+/* Organizations horizontal scroll */
+
+.organizations-section {
+  padding: 110px 0 130px;
+  background: #f4f2ec;
+  overflow: hidden;
+}
+
+.organizations-section h2 {
+  text-align: center;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #4b5f4b;
+  margin-bottom: 70px;
+}
+
+.logo-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-track {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  animation: logoScroll 28s linear infinite;
+}
+
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.client-logo {
+  width: 220px;
+  height: 120px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(75, 95, 75, 0.25);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #4b5f4b;
+  background: #ebe7dc;
+}
+
+@keyframes logoScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Footer adjustment */
+
+footer {
+  padding: 32px 48px;
+  background: #172017;
+  color: #f4f2ec;
+  font-size: 0.85rem;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .home-header {
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .home-nav {
+    flex-wrap: wrap;
+    max-width: 70%;
+    gap: 12px;
+  }
+
+  .home-logo {
+    text-align: right;
+  }
+
+  .rotating-title {
+    min-height: 220px;
+    font-size: clamp(3rem, 16vw, 5.5rem);
+  }
+
+  .editorial-section,
+  .editorial-section.reverse {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding: 90px 24px;
+  }
+
+  .editorial-image img {
+    height: 430px;
+  }
+
+  .service-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-services-preview {
+    padding: 90px 24px;
+  }
+
+  .client-logo {
+    width: 180px;
+    height: 100px;
+  }
+}
