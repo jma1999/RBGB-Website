@@ -554,7 +554,7 @@ body {
       transparent 78%
     );
   text-decoration-line: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: solid;
   text-decoration-thickness: 2px;
   text-underline-offset: 7px;
 }
