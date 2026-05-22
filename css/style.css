@@ -545,30 +545,32 @@ body {
 
 .crayon-underline {
   background-image:
-    radial-gradient(circle, rgba(75, 95, 75, 0.8) 0 0.8px, transparent 1.2px),
-    radial-gradient(circle, rgba(75, 95, 75, 0.5) 0 0.7px, transparent 1.3px),
-    radial-gradient(circle, rgba(75, 95, 75, 0.35) 0 0.6px, transparent 1.2px),
     linear-gradient(
       to right,
       rgba(75, 95, 75, 0.75),
-      rgba(75, 95, 75, 0.95),
-      rgba(75, 95, 75, 0.7)
+      rgba(75, 95, 75, 0.45),
+      rgba(75, 95, 75, 0.85),
+      rgba(75, 95, 75, 0.55),
+      rgba(75, 95, 75, 0.75)
+    ),
+    linear-gradient(
+      to right,
+      rgba(75, 95, 75, 0.25),
+      transparent,
+      rgba(75, 95, 75, 0.35),
+      transparent,
+      rgba(75, 95, 75, 0.25)
     );
 
   background-size:
-    3px 4px,
-    5px 5px,
-    9px 4px,
-    100% 2px;
+    100% 3px,
+    100% 5px;
 
   background-position:
     0 0.98em,
-    1px 1em,
-    3px 1.02em,
-    0 1em;
+    0 0.96em;
 
   background-repeat: repeat-x;
-
   text-decoration: none;
 }
 
