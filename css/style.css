@@ -591,8 +591,8 @@ body {
 .service-preview-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 3px solid rgba(75, 95, 75, 0.25);
-  border-left: 3px solid rgba(75, 95, 75, 0.25);
+  border-top: 2px solid rgba(75, 95, 75, 0.45);
+  border-left: 2px solid rgba(75, 95, 75, 0.45);
 }
 
 .service-preview-grid a {
@@ -600,8 +600,8 @@ body {
   padding: 32px;
   display: flex;
   align-items: flex-end;
-  border-right: 1px solid rgba(75, 95, 75, 0.25);
-  border-bottom: 1px solid rgba(75, 95, 75, 0.25);
+  border-right: 2px solid rgba(75, 95, 75, 0.45);
+  border-bottom: 2px solid rgba(75, 95, 75, 0.45);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 3.1rem);
   line-height: 1;
