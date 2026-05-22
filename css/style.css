@@ -629,7 +629,7 @@ body {
 
 .logo-track {
   display: flex;
-  gap: 28px;
+  gap: 48px;
   width: max-content;
   animation: logoScroll 28s linear infinite;
 }
@@ -642,14 +642,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 180px;
-  height: 90px;
-  padding: 16px;
-
+  min-width: 220px;
+  height: 110px;
+  padding: 20px;
+  overflow: visible;
   background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: none;
+}
+
+.client-logo img {
+  max-width: 150px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 @keyframes logoScroll {
@@ -714,14 +723,5 @@ footer {
 
   .home-services-preview {
     padding: 90px 24px;
-  }
-
-  .client-logo img {
-    max-width: 150px;
-    max-height: 70px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
   }
 }
