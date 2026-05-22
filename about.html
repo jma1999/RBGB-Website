@@ -3,63 +3,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Ross-Bain Green Building, LLC</title>
+
+  <title>About | RBGB</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="site-header dark-header">
+  <!-- SAME HEADER AS HOME -->
+  <header class="home-header">
+    <nav class="home-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html" class="active-nav">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
     <a href="index.html" class="logo">
       <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
     </a>
+  </header>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
 
-      <div class="dropdown">
-        <a href="services.html">Services</a>
-        <div class="dropdown-menu">
-          <a href="services.html#leed">LEED Administration Plus</a>
-          <a href="services.html#commissioning">Commissioning</a>
-          <a href="services.html#energy-modeling">Energy Modeling</a>
-          <a href="services.html#energy-audits">Energy Audits</a>
-          <a href="services.html#facility-management">Sustainable Facility Management</a>
-          <a href="services.html#training">Training & Workshops</a>
+  <main>
+
+    <!-- HERO VIDEO SECTION -->
+    <section class="about-hero" id="top">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/videos/officeview2.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-dark-overlay"></div>
+
+      <div class="about-hero-title">
+        <p class="section-kicker hero-kicker">About</p>
+        <h1>Since 2009.</h1>
+      </div>
+
+      <a href="#about-history" class="scroll-arrow" aria-label="Scroll down">
+        ↓
+      </a>
+    </section>
+
+
+    <!-- HISTORY SECTION -->
+    <section class="about-editorial-section" id="about-history">
+      <div class="about-large-image">
+        <img src="assets/images/main-campus.jpg" alt="Office or building consulting placeholder">
+      </div>
+
+      <div class="about-small-image">
+        <img src="assets/images/visit-tech.png" alt="Team collaboration placeholder">
+      </div>
+
+      <div class="about-copy-block">
+        <button class="about-heading-button" data-modal="modal-history">
+          <h2>The History</h2>
+        </button>
+
+        <p class="about-bold-text">
+          We provide technical and integrated support for owners, architects, engineers and building users pursuing advanced high-performance green building goals.
+        </p>
+
+        <p>
+          Established in 2009, RBGB brings decades of HVAC, green building, LEED, energy modeling, commissioning and sustainable operations experience to projects across new and existing buildings.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-history">Read more</button>
+      </div>
+    </section>
+
+
+    <!-- PROCESS SECTION -->
+    <section class="about-editorial-section reverse" id="about-process">
+      <div class="about-large-image">
+        <img src="assets/images/georgia-tech-campus-center-cooper-carry-architecture-exterior-night-view-2880x1440.webp" alt="Workshop or building review placeholder">
+      </div>
+
+      <div class="about-copy-block">
+        <button class="about-heading-button" data-modal="modal-process">
+          <h2>The Process</h2>
+        </button>
+
+        <p class="about-bold-text">
+          Every project is a journey of discovery, shaped by the building, the budget, the client’s goals and the opportunities uncovered along the way.
+        </p>
+
+        <p>
+          From early conversations to project delivery and completion, we use focused meetings, site visits, document reviews, analysis and strategic guidance to help teams make clear decisions.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-process">Read more</button>
+      </div>
+    </section>
+
+
+    <!-- LEADERSHIP SECTION -->
+    <section class="about-leadership-section" id="about-leadership">
+      <div class="leadership-image-card">
+        <button class="leadership-image-button" data-modal="modal-leadership">
+          <img src="assets/images/jeff-ross-bain-2-compressed.webp" alt="Leadership portrait placeholder">
+        </button>
+
+        <div class="leadership-caption">
+          <h3>Jeff Ross-Bain</h3>
+          <p>President / PE / LEED Fellow</p>
         </div>
       </div>
 
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+      <div class="about-copy-block leadership-copy">
+        <button class="about-heading-button" data-modal="modal-leadership">
+          <h2>The Leadership</h2>
+        </button>
 
-  <main class="page-main">
-    <section class="about-section">
-      <div>
-        <img src="assets/images/prof.jpg" alt="Placeholder portrait" class="about-image" />
-      </div>
+        <p class="about-bold-text">
+          Jeff Ross-Bain founded RBGB in 2009 and brings deep experience in HVAC design, high-performance green buildings, LEED, energy modeling and sustainable operations.
+        </p>
 
-      <div>
-        <p class="eyebrow">About</p>
-        <h1>Jeff Ross-Bain | President</h1>
         <p>
-          RBGB was established in 2009 by Jeff Ross-Bain. The firm provides expert technical and integrated support services that help owners, architects, engineers and building users establish and meet their advanced high-performance green building goals. RBGB has offices in Atlanta, GA and Charleston, SC.
-          The RBGB mission is to advise, engage, and challenge clients on paths to achieving sustainable, high performance buildings within acceptable budgets. By resourcing a large bank of experience, technical tools, and green building know-how; we will zero-in on specific energy saving opportunities unique to each project. Specialized skills, an integrated project delivery focus, and a passion for sustainability are combined to give clients worthwhile and best in class results. RBGB continues to stay current and contributes to the ever-expanding knowledge of science, technology and methods relating to sustainable buildings and infrastructure
+          He is active in advancing the profession through standards committees, teaching, workshops and technical leadership in zero energy and high-performance building practice.
         </p>
-        <p>
-          Jeff is a registered professional mechanical engineer with 20 years of HVAC design experience.
-          Since 2001, Jeff has worked exclusively on high-performance green building design, construction and operations. Jeff is a LEED Fellow and holds a Master’s Degree from Georgia Tech. He has been involved on over 70 LEED projects and performs energy modeling, energy assessments, oversees commissioning activities, and provides owners with professional facility management expertise to ensure the sustainable, on-going, performance of buildings. Jeff is very active in his profession and has served on ASHRAE Standards committees, boards and technical committees, and currently sits on the committee for the new ASHRAE Standard 228p (Standard Method for Evaluating Zero Energy Building Performance).
-          Jeff frequently leads college classes, seminars and workshops on a wide range of topics and, starting in January 2020, will be teaching a Master’s level class at Georgia Tech on Facility Operations and Maintenance.
-          In 2000, Jeff rode a bicycle across the United States.
-        </p>
+
+        <button class="text-link-button" data-modal="modal-leadership">Read more</button>
       </div>
     </section>
+
   </main>
+
+
+  <!-- HISTORY MODAL -->
+  <div class="service-modal" id="modal-history">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+
+      <h2>The History</h2>
+
+      <p>
+        RBGB was established in 2009 by Jeff Ross-Bain. The firm provides expert technical and integrated support services that help owners, architects, engineers and building users establish and meet their advanced high-performance green building goals. RBGB has offices in Atlanta, GA and Charleston, SC.
+      </p>
+
+      <p>
+        Jeff Ross-Bain has over 30 years of experience in commercial and industrial HVAC design and applications. Since 2001, Jeff has worked exclusively in the field of high-performance green buildings.
+      </p>
+
+      <p>
+        Jeff is very active in the advancement of his industry and recently stepped down from an 8-year stint as the Working Group Chair and a Voting Member for ASHRAE Standard 189.1: Standard for the Design of High-Performance Green Buildings, and was a Board Member of the Green Chamber of the South. Jeff is currently teaching a Master’s Level course, Operations and Maintenance, at the Georgia Tech School of Building Construction.
+      </p>
+
+      <p>
+        Jeff and his team have been involved in over 80 LEED registered or certified projects, have had direct administrative control and provided energy simulations for LEED Certified, Silver, Gold, and Platinum buildings. Furthermore, RBGB has conducted numerous energy and water audits, provides new and existing building commissioning services, consults across the gamut of sustainable building issues, provides sustainable facility management services, and regularly leads college classes, conducts workshops and delivers talks on a wide range of green building topics.
+      </p>
+
+      <p>
+        The RBGB mission is to advise, engage, and challenge clients on paths to achieving sustainable, high-performance buildings within acceptable budgets. By resourcing a large bank of experience, technical tools, and green building know-how, we zero in on specific energy-saving opportunities unique to each project.
+      </p>
+
+      <p>
+        Specialized skills, an integrated project delivery focus, and a passion for sustainability are combined to give clients worthwhile and best-in-class results. RBGB continues to stay current and contributes to the expanding knowledge of science, technology and methods relating to sustainable buildings and infrastructure.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- PROCESS MODAL -->
+  <div class="service-modal" id="modal-process">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+
+      <h2>The Process</h2>
+
+      <p>
+        Be it delivery of a LEED Platinum building, conducting an energy audit, commissioning of systems, building a strategic energy model, developing sustainable facility operation plans, or exploring a blue-sky possibility, we engage in a dynamic process and, as Lewis and Clarke put it, are on “a journey of discovery.”
+      </p>
+
+      <p>
+        All projects are unique and offer unique challenges and opportunities — some well-defined, others unknown. The goal is to make the building function as best as possible, within budget, and to optimize overall performance.
+      </p>
+
+      <p>
+        We are always available to discuss your project and find out how we can partner with you in creative ways to meet your goals.
+      </p>
+
+      <h3>I. Preliminary Steps</h3>
+
+      <p>
+        Before any formal agreement, we discuss the project with the client to understand the project scope, goals and budget. A scope of work and fee structure is then prepared for client review and acceptance.
+      </p>
+
+      <p>
+        Once agreed, a formal Letter Agreement for Professional Services is prepared for signing and the project is ready to start.
+      </p>
+
+      <h3>II. Project Delivery</h3>
+
+      <p>
+        Through strategic steps such as focused meetings, site visits, document reviews, visioning sessions and other discovery efforts, we gain a deep understanding of the project and the client goals. This early phase is where many creative ideas emerge from the project team.
+      </p>
+
+      <p>
+        These ideas and strategies can be assessed for feasibility through calculation or energy simulation. Throughout the project, opportunities arise that can redefine the project goals. When possible, RBGB analyzes these ideas for relative impact and feasibility and brings clear, useful information to the client to support decision-making.
+      </p>
+
+      <p>
+        As the project objectives mature, the project team gets clear direction on how to proceed, and the nuts and bolts of the project delivery are implemented. This phase involves typical design and research processes, preparation of final documentation, and reporting the findings to the client.
+      </p>
+
+      <p>
+        These principles, in various forms, apply to new construction and major renovations, as well as energy audits, commissioning, or sustainable facility management projects.
+      </p>
+
+      <h3>III. Project Completion</h3>
+
+      <p>
+        For many projects, completed deliverables make closeout clear and well-defined; a LEED plaque, for example. However, for projects where a study or investigation took place, our involvement does not end at report delivery. We remain available for discussion, queries and further consultation if necessary.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- LEADERSHIP MODAL -->
+  <div class="service-modal" id="modal-leadership">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+
+      <h2>The Leadership</h2>
+
+      <p>
+        Jeff Ross-Bain is the President of Ross-Bain Green Building and founded the company in January 2009. Jeff is a registered professional mechanical engineer with 20 years of HVAC design experience.
+      </p>
+
+      <p>
+        Since 2001, Jeff has worked exclusively on high-performance green building design, construction and operations. Jeff is a LEED Fellow and holds a Master’s Degree from Georgia Tech.
+      </p>
+
+      <p>
+        He has been involved on over 70 LEED projects and performs energy modeling, energy assessments, oversees commissioning activities, and provides owners with professional facility management expertise to ensure the sustainable, ongoing performance of buildings.
+      </p>
+
+      <p>
+        Jeff is very active in his profession and has served on ASHRAE Standards committees, boards and technical committees, and currently sits on the committee for the new ASHRAE Standard 228p, Standard Method for Evaluating Zero Energy Building Performance.
+      </p>
+
+      <p>
+        Jeff frequently leads college classes, seminars and workshops on a wide range of topics and, starting in January 2020, will be teaching a Master’s level class at Georgia Tech on Facility Operations and Maintenance.
+      </p>
+
+      <p>
+        In 2000, Jeff rode a bicycle across the United States.
+      </p>
+    </div>
+  </div>
+
 
   <footer>
     <p>© 2026 Ross-Bain Green Building, LLC. All rights reserved.</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

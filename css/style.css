@@ -1279,3 +1279,236 @@ body.modal-open {
     border-radius: 999px;
   }
 }
+
+/* ================================
+   ABOUT PAGE — STUDIO STYLE
+================================ */
+
+.about-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 720px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.about-hero-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: min(1000px, 90vw);
+}
+
+.hero-kicker {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.about-hero-title h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+
+/* About editorial layout */
+
+.about-editorial-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0 110px;
+  background: #f4f2ec;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  column-gap: 95px;
+  align-items: center;
+}
+
+.about-editorial-section.reverse {
+  grid-template-columns: 0.75fr 1fr;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.about-editorial-section.reverse .about-large-image {
+  order: 2;
+}
+
+.about-editorial-section.reverse .about-copy-block {
+  order: 1;
+}
+
+.about-large-image img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.about-small-image {
+  position: absolute;
+  top: 70px;
+  right: 6vw;
+  width: 24vw;
+  max-width: 420px;
+}
+
+.about-small-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.about-copy-block {
+  max-width: 560px;
+  color: #4b5f4b;
+}
+
+.about-heading-button {
+  padding: 0;
+  margin: 0 0 28px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.about-heading-button h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.4rem, 5vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  color: #4b5f4b;
+  transition: opacity 0.25s ease;
+}
+
+.about-heading-button:hover h2 {
+  opacity: 0.65;
+}
+
+.about-bold-text {
+  font-family: "Inter", Arial, sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: clamp(1.05rem, 1.5vw, 1.45rem) !important;
+  line-height: 1.45 !important;
+  font-weight: 700;
+  color: #4b5f4b;
+  margin-bottom: 24px;
+}
+
+.about-copy-block p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 1.8vw, 1.85rem);
+  line-height: 1.3;
+  color: #243024;
+}
+
+
+/* Leadership layout */
+
+.about-leadership-section {
+  min-height: 100vh;
+  padding: 120px 8vw;
+  background: #f4f2ec;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.leadership-image-card {
+  width: 100%;
+}
+
+.leadership-image-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+}
+
+.leadership-image-button img {
+  width: 100%;
+  height: 68vh;
+  object-fit: cover;
+  transition: transform 700ms ease, filter 700ms ease;
+}
+
+.leadership-image-button:hover img {
+  transform: scale(1.025);
+  filter: brightness(0.9);
+}
+
+.leadership-caption {
+  text-align: center;
+  margin-top: 18px;
+  color: #4b5f4b;
+}
+
+.leadership-caption h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.9rem, 2.5vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.leadership-caption p {
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.leadership-copy {
+  justify-self: center;
+}
+
+
+/* Responsive about page */
+
+@media (max-width: 950px) {
+  .about-hero-title h1 {
+    font-size: clamp(3.4rem, 15vw, 6rem);
+  }
+
+  .about-editorial-section,
+  .about-editorial-section.reverse,
+  .about-leadership-section {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding: 90px 24px;
+  }
+
+  .about-editorial-section.reverse .about-large-image,
+  .about-editorial-section.reverse .about-copy-block {
+    order: initial;
+  }
+
+  .about-small-image {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-small-image img {
+    height: 320px;
+  }
+
+  .about-large-image img,
+  .leadership-image-button img {
+    height: 430px;
+  }
+}

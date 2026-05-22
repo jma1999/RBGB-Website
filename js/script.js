@@ -18,7 +18,7 @@ if (titleLines.length > 0) {
 
 
 /* ================================
-   SERVICES MODALS
+   MODALS FOR SERVICES + ABOUT
 ================================ */
 
 const modalTriggers = document.querySelectorAll("[data-modal]");
