@@ -36,7 +36,7 @@
     align-items: center;
     padding: 24px 48px;
     color: #fff;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
   }
   
   .dark-header {
@@ -384,7 +384,7 @@ body {
   align-items: center;
   padding: 24px 28px;
   color: #fff;
-  mix-blend-mode: difference;
+  mix-blend-mode: normal;
   pointer-events: none;
 }
 
@@ -555,7 +555,7 @@ body {
     );
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 0px;
   text-underline-offset: 7px;
 }
 
