@@ -646,8 +646,8 @@ body {
 }
 
 .client-logo img {
-  max-width: 150px;
-  max-height: 70px;
+  max-width: 220px;
+  max-height: 110px;
   width: auto;
   height: auto;
   object-fit: contain;
