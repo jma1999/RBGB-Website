@@ -449,7 +449,7 @@ body {
   position: relative;
   min-height: 130px;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-size: clamp(2rem, 6vw, 6rem);
   font-weight: 500;
   line-height: 0.95;
   letter-spacing: -0.055em;
@@ -521,7 +521,7 @@ body {
 
 .editorial-text h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.4rem, 4.4vw, 4.7rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   line-height: 0.98;
   font-weight: 500;
   letter-spacing: -0.055em;
@@ -582,7 +582,7 @@ body {
   border-right: 2px solid rgba(75, 95, 75, 0.45);
   border-bottom: 2px solid rgba(75, 95, 75, 0.45);
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  font-size: clamp(1.8rem, 2vw, 2rem);
   line-height: 1;
   letter-spacing: -0.04em;
   color: #4b5f4b;
@@ -606,7 +606,7 @@ body {
 .organizations-section h2 {
   text-align: center;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 500;
   letter-spacing: -0.04em;
   color: #4b5f4b;
@@ -633,7 +633,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 220px;
+  min-width: 250px;
   height: 110px;
   padding: 20px;
   overflow: visible;
