@@ -3,88 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact | RBGB</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="site-header dark-header">
+  <!-- SAME HEADER AS OTHER PAGES -->
+  <header class="home-header inner-header">
+    <nav class="home-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active-nav">Contact</a>
+    </nav>
+
     <a href="index.html" class="logo">
       <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
     </a>
+  </header>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
 
-      <div class="dropdown">
-        <a href="services.html">Services</a>
-        <div class="dropdown-menu">
-          <a href="services.html#leed">LEED Administration Plus</a>
-          <a href="services.html#commissioning">Commissioning</a>
-          <a href="services.html#energy-modeling">Energy Modeling</a>
-          <a href="services.html#energy-audits">Energy Audits</a>
-          <a href="services.html#facility-management">Sustainable Facility Management</a>
-          <a href="services.html#training">Training & Workshops</a>
+  <main class="contact-page">
+
+    <section class="contact-hero">
+      <p class="section-kicker">Contact</p>
+      <h1>Want to discuss a potential project? Contact us today!</h1>
+    </section>
+
+
+    <!-- OFFICE LOCATION 01 -->
+    <section class="contact-office-section">
+      <div class="contact-details-block">
+        <p class="contact-label">Atlanta Office</p>
+
+        <h2>
+          Ross-Bain Green Building, LLC<br>
+          659 Auburn Avenue, Suite 259<br>
+          Atlanta, GA 30312
+        </h2>
+
+        <p class="contact-phone">
+          Telephone <a href="tel:+14042208955">+1 404 220 8955</a>
+        </p>
+      </div>
+
+      <div class="contact-map-window">
+        <iframe
+          src="https://www.google.com/maps?q=Atlanta,+Georgia,+USA&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+
+    <!-- OFFICE LOCATION 02 -->
+    <section class="contact-office-section reverse">
+      <div class="contact-details-block">
+        <p class="contact-label">Charleston Office</p>
+
+        <h2>
+          Ross-Bain Green Building, LLC<br>
+          63 Broad Street, Second Floor<br>
+          Charleston, SC 29401
+        </h2>
+
+        <p class="contact-phone">
+          Telephone <a href="tel:+18437799229">+1 843 779 9229</a>
+        </p>
+      </div>
+
+      <div class="contact-map-window">
+        <iframe
+          src="https://www.google.com/maps?q=Charleston,+South+Carolina,+USA&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+
+    <!-- GENERAL ENQUIRIES -->
+    <section class="contact-info-list">
+
+      <div class="contact-info-item">
+        <p class="contact-label">E-mail</p>
+        <h2>
+          <a href="mailto:info@rbgb.com">info@rbgb.com</a>
+        </h2>
+      </div>
+
+      <!-- <div class="contact-info-item">
+        <p class="contact-label">General Enquiries</p>
+        <h2>
+          <a href="tel:+10000000000">Telephone +1 000 000 0000</a><br>
+          <a href="mailto:studio@example.com">studio@example.com</a>
+        </h2>
+      </div> -->
+
+      <div class="contact-info-item">
+        <p class="contact-label">Follow RBGB</p>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/ross-bain-green-building/posts/?feedView=all" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
 
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="page-hero">
-      <p class="eyebrow">Contact RBGB</p>
-      <h1>Let’s talk about better building performance.</h1>
     </section>
 
-    <section class="contact-grid">
-      <div>
-        <h2>Atlanta Office</h2>
-        <p>659 Auburn Avenue, Suite 259</p>
-        <p>Atlanta, GA 30312</p>
-        <p>(404)220-8955</p>
-      </div>
-
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4677.742181743302!2d-84.36882732429616!3d33.756012873269995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f503f7bf6ccffb%3A0x651642ea28bb8d75!2s659%20Auburn%20Ave%20NE%20%23259%2C%20Atlanta%2C%20GA%2030312!5e1!3m2!1sen!2sus!4v1779329912734!5m2!1sen!2sus"
-          width="100%"
-          height="300"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-
-      <div>
-        <h2>Charleston Office</h2>
-        <p>63 Broad Street, Second Floor</p>
-        <p>Charleston, SC 29401</p>
-        <p>(843)779-9229</p>
-      </div>
-
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4730.505413436288!2d-79.93239665026908!3d32.77643593161655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7a0fd235df7f%3A0x25bdbb1b0afe071a!2s63%20Broad%20St%2C%20Charleston%2C%20SC%2029401!5e1!3m2!1sen!2sus!4v1779330229435!5m2!1sen!2sus"
-          width="100%"
-          height="300"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      
-      <div>
-        <h2>Email</h2>
-        <p>info@rbgb.com</p>
-      </div>
-    </section>
   </main>
+
 
   <footer>
     <p>© 2026 Ross-Bain Green Building, LLC. All rights reserved.</p>
