@@ -724,7 +724,7 @@ footer {
 .inner-header {
   color: #172017;
   mix-blend-mode: normal;
-  background: #f4f2ec;
+  background: transparent;
 }
 
 .inner-header .home-nav a,
