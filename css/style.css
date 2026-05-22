@@ -521,7 +521,7 @@ body {
 
 .editorial-text h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3rem, 5.5vw, 5.8rem);
+  font-size: clamp(2.6rem, 4.8vw, 5rem);
   line-height: 0.98;
   font-weight: 500;
   letter-spacing: -0.055em;
