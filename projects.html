@@ -3,82 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Projects | RBGB</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="site-header dark-header">
-    <a href="index.html" class="logo">
-      <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
-    </a>
-
-    <nav class="nav">
+  <!-- SAME HEADER AS HOME / SERVICES -->
+  <header class="home-header inner-header">
+    <nav class="home-nav">
       <a href="index.html">Home</a>
-
-      <div class="dropdown">
-        <a href="services.html">Services</a>
-        <div class="dropdown-menu">
-          <a href="services.html#leed">LEED Administration Plus</a>
-          <a href="services.html#commissioning">Commissioning</a>
-          <a href="services.html#energy-modeling">Energy Modeling</a>
-          <a href="services.html#energy-audits">Energy Audits</a>
-          <a href="services.html#facility-management">Sustainable Facility Management</a>
-          <a href="services.html#training">Training & Workshops</a>
-        </div>
-      </div>
-
-      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="active-nav">Projects</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
+    </a>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero">
-      <p class="eyebrow">Projects</p>
-      <h1>Selected work in sustainable and high-performance buildings.</h1>
+
+  <main class="projects-page">
+
+    <section class="projects-intro">
+      <p class="section-kicker">Projects</p>
+      <h1>Selected work in high-performance buildings, certification, energy and operations.</h1>
     </section>
 
-    <section class="project-grid">
-      <article class="project-card">
-        <img src="assets/images/emory.jpg" alt="Placeholder project image" />
-        <div>
-          <h2>Convocation Hall | Emory University</h2>
-          <p>
-            LEED Status: Gold | Location: Atlanta, GA | Services Provided: LEED Administration, Energy Modeling
-            Built-in 1916, the Theology Building, now called Convocation Hall, has been meticulously restored to become Emory’s hub for administration, the President, and the board of trustees. This 27,889 square foot building, Emory’s first LEEDv4 project, uses 33% less energy, 25% less indoor water, and 75% less outdoor water than a structure built to code and features advanced energy and water metering. The building reduced potable water consumption by using the Emory WaterHub, an on-site water recycling system for cooling tower use. RBGB constructed the building’s energy model and led the entire LEED certification process. RBGB utilized the integrative design process to ensure project success, including several LEED meetings, continuous assessment of requirements, and full engagement from the designers, contractors, third-party providers, and Emory facilities staff.
-          </p>
-        </div>
-      </article>
 
-      <article class="project-card">
-        <img src="assets/images/worldofcoke.jpg" alt="Placeholder project image" />
-        <div>
+    <section class="project-gallery">
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item project-large">
+        <img src="assets/images/emory.jpg" alt="Convocation Hall project placeholder">
+        <div class="project-caption">
+          <h2>Convocation Hall</h2>
+          <p>Atlanta, GA | LEED Gold | LEED Administration / Energy Modeling</p>
+        </div>
+      </a>
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/worldofcoke.jpg" alt="Office retrofit project placeholder">
+        <div class="project-caption">
           <h2>The New World of Coca-Cola</h2>
-          <p>
-            LEED Status: Gold | Location: Atlanta, GA | Services Provided: LEED Administration, Energy Modeling
-            This 94,000 square foot museum dedicated to the story of The Coca-Cola Company is an Atlanta landmark and the project team was charged with meeting The Coca-Cola Company’s high energy and environmental performance goals. The project includes extensive museum features such as climate-controlled rooms and two theaters as well as extensive landscaped grounds in a park like setting. RBGB personnel were tapped as the LEED consultant, environmental advisor, and energy simulation expert for the project that achieved LEED Gold certification. Energy modeling technology was used extensively to optimize environmental performance and reduce first costs. We worked directly with the design team and maintained a presence on the site throughout construction.
-          </p>
+          <p>Atlanta, GA | LEED Gold | LEED Administration / Energy Modeling</p>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
-        <img src="assets/images/treesatlanta.jpg" alt="Placeholder project image" />
-        <div>
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/treesatlanta.jpg" alt="Hospital energy audit project placeholder">
+        <div class="project-caption">
           <h2>Trees Atlanta Headquarters</h2>
-          <p>
-            LEED Status: Platinum | Location: Atlanta, GA | Services Provided: LEED Administration, Energy Modeling
-            This 10,000 square foot office building is headquarters for the iconic Trees Atlanta organization and the project team was charged with producing an exemplary building. We did. This was one of Georgia’s first LEED Platinum buildings and operates at 72% less energy use than “business as usual” designs. In fact, because we are interested, RBGB has tracked ongoing performance for this building and it continues to operate at a high level of performance. RBGB personnel led the entire LEED process, constructed the energy model and performed various studies to improve performance such as analyzing a physical model for shading effects and critical window property selection. This project includes a geothermal heat pump system, solar thermal hot water, solar electric, rainharvest system for toilet flushing and irrigation, daylighting, green roof, and sustainable landscape.
-          </p>
+          <p>Atlanta, GA | LEED Platinum | LEED Administration / Energy Modeling</p>
         </div>
-      </article>
+      </a>
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/Toyota-Building-1024x576.jpg" alt="Campus building project placeholder">
+        <div class="project-caption">
+          <h2>Southeast Toyota</h2>
+          <p>Commerce, GA | LEED Registered | LEED Administration / Energy Modeling / Commissioning</p>
+        </div>
+      </a>
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/DSC_0667.jpg" alt="Laboratory building project placeholder">
+        <div class="project-caption">
+          <h2>Coffee Regional Medical Centre</h2>
+          <p>Douglas, GA | Energy Audit | LEED Administration / Energy Modeling</p>
+        </div>
+      </a>
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/MSC-Maersk-Magma-3-Planes-2025-111-1024x576.jpg" alt="Commercial tower project placeholder">
+        <div class="project-caption">
+          <h2>General Aviation Facility</h2>
+          <p>Greenville, SC | LEED Gold | LEED Administration / Energy Modeling</p>
+        </div>
+      </a>
+
+      <a href="projects/convocation-hall.html" class="project-gallery-item">
+        <img src="assets/images/4329-01-1710x1080.jpg" alt="Commercial tower project placeholder">
+        <div class="project-caption">
+          <h2>Ogeechee Tech College</h2>
+          <p>Statesboro, GA | LEED Registered | LEED Administration / Energy Modeling / Commissioning</p>
+        </div>
+      </a>
+
     </section>
+
   </main>
+
 
   <footer>
     <p>© 2026 Ross-Bain Green Building, LLC. All rights reserved.</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1057,3 +1057,225 @@ body.modal-open {
     margin-right: -8px;
   }
 }
+
+/* ================================
+   PROJECTS PAGE — GALLERY STYLE
+================================ */
+
+.projects-page {
+  background: #f4f2ec;
+  color: #172017;
+  padding: 130px 0 120px;
+}
+
+.projects-intro {
+  width: min(980px, 90vw);
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.projects-intro h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+  color: #4b5f4b;
+}
+
+.project-gallery {
+  width: min(1480px, 86vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 72px;
+  row-gap: 105px;
+  align-items: start;
+}
+
+.project-gallery-item {
+  display: block;
+  color: #4b5f4b;
+}
+
+.project-gallery-item:nth-child(even) {
+  margin-top: 70px;
+}
+
+.project-gallery-item img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  transition: transform 700ms ease, filter 700ms ease;
+}
+
+.project-gallery-item:hover img {
+  transform: scale(1.025);
+  filter: brightness(0.9);
+}
+
+.project-large img {
+  height: 560px;
+}
+
+.project-caption {
+  padding-top: 18px;
+  text-align: center;
+}
+
+.project-caption h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.75rem, 2.2vw, 2.6rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-caption p {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+
+/* ================================
+   PROJECT DETAIL PAGE
+================================ */
+
+.project-detail-body {
+  background: #f4f2ec;
+  color: #172017;
+  overflow-x: hidden;
+}
+
+.project-close-link {
+  position: fixed;
+  top: 28px;
+  left: 28px;
+  z-index: 20;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #172017;
+}
+
+.project-close-link:hover {
+  opacity: 0.6;
+}
+
+.project-detail-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-detail-copy {
+  min-height: 100vh;
+  padding: 120px 70px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-status {
+  font-family: "Inter", Arial, sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem !important;
+  line-height: 1.6 !important;
+  color: #4b5f4b;
+  margin-bottom: 26px;
+  font-weight: 600;
+}
+
+.project-detail-copy h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.6rem, 6vw, 7.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+  font-weight: 500;
+  color: #4b5f4b;
+  margin-bottom: 28px;
+}
+
+.project-meta {
+  font-family: "Inter", Arial, sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem !important;
+  line-height: 1.7 !important;
+  color: #4b5f4b;
+  margin-bottom: 44px;
+}
+
+.project-detail-copy p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 1.55vw, 1.65rem);
+  line-height: 1.32;
+  color: #243024;
+  max-width: 680px;
+  margin: 0 auto 22px;
+}
+
+.project-detail-image {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.project-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Responsive project pages */
+
+@media (max-width: 950px) {
+  .projects-page {
+    padding-top: 120px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    width: min(720px, 88vw);
+    row-gap: 70px;
+  }
+
+  .project-gallery-item:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .project-gallery-item img,
+  .project-large img {
+    height: 420px;
+  }
+
+  .project-detail-page {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-copy {
+    min-height: auto;
+    padding: 110px 28px 60px;
+  }
+
+  .project-detail-image {
+    height: 70vh;
+    position: relative;
+  }
+
+  .project-close-link {
+    background: #f4f2ec;
+    padding: 10px 14px;
+    border-radius: 999px;
+  }
+}
