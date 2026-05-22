@@ -1379,7 +1379,7 @@ body.modal-open {
 
 .about-heading-button h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 6vw, 6rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
   font-weight: 500;
