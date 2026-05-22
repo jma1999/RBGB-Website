@@ -544,21 +544,14 @@ body {
 /* Crayon-style underline */
 
 .crayon-underline {
-  position: relative;
-  display: inline;
   background-image:
-    linear-gradient(
-      transparent 58%,
-      rgba(75, 95, 75, 0.16) 58%,
-      rgba(75, 95, 75, 0.16) 78%,
-      transparent 78%
-    );
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 0px;
-  text-underline-offset: 7px;
+    radial-gradient(circle, rgba(75, 95, 75, 0.8) 0 1px, transparent 1.8px),
+    linear-gradient(to right, rgba(75, 95, 75, 0.8), rgba(75, 95, 75, 0.55));
+  background-size: 9px 2px, 100% 2px;
+  background-repeat: repeat-x;
+  background-position: 0 0.95em, 0 0.95em;
+  text-decoration: none;
 }
-
 
 /* Services preview */
 
