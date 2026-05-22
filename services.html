@@ -3,95 +3,380 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Services | RBGB</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Same fonts as homepage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="site-header dark-header">
-    <a href="index.html" class="logo">
-      <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
-    </a>
-
-    <nav class="nav">
+  <!-- SAME HEADER STYLE AS HOME PAGE -->
+  <header class="home-header inner-header">
+    <nav class="home-nav">
       <a href="index.html">Home</a>
-
-      <div class="dropdown">
-        <a href="services.html">Services</a>
-        <div class="dropdown-menu">
-          <a href="#leed">LEED Administration Plus</a>
-          <a href="#commissioning">Commissioning</a>
-          <a href="#energy-modeling">Energy Modeling</a>
-          <a href="#energy-audits">Energy Audits</a>
-          <a href="#facility-management">Sustainable Facility Management</a>
-          <a href="#training">Training & Workshops</a>
-        </div>
-      </div>
-
+      <a href="services.html" class="active-nav">Services</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/rbgb-logo.webp" alt="RBGB logo">
+    </a>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero">
-      <p class="eyebrow">Services</p>
-      <h1>Dedicated to achieving your sustainability goals.</h1>
+
+  <main>
+
+    <!-- SERVICES LANDING SECTION -->
+    <section class="services-landing">
+      <div class="services-landing-large">
+        <img src="assets/images/admissions_thumb.jpg" alt="High performance building consulting placeholder">
+      </div>
+
+      <div class="services-landing-small">
+        <img src="assets/images/Land-Conservation_Conservation-Loans_Atlanta-Beltline-hero_Stacy-Funderburke.jpg" alt="Sustainable building systems placeholder">
+      </div>
+
+      <div class="services-landing-copy">
+        <p class="section-kicker left-kicker">Services</p>
+
+        <h1>
+          We offer a broad range of services to maximize your building’s performance.
+        </h1>
+
+        <p>
+          We are experts in LEED administration, commissioning, energy modeling, energy audits, and sustainable facility management. We also offer training sessions and workshops to share our expertise with others.
+        </p>
+      </div>
     </section>
 
-    <section class="services-list">
-      <article id="leed">
-        <h2>LEED Administration Plus</h2>
-        <p>
-          The green building process demands collaborative and creative input from a variety of disciplines. Team members must be willing to emerge from traditional silos and take a seat at the table, explore options, and be creative. The term for this approach is Integrated Project Delivery (IPD). RBGB promotes, encourages, and facilitates IPD as a sensible approach under all types of project team scenarios.
-          RBGB has been involved in over 80 LEED projects and has had direct project administrative control and performed energy models for LEED Certified, Silver, Gold and Platinum buildings. We are fully experienced with the intricacies of LEED credit requirements, documentation protocols, and the LEED submittal and review process. We provide all the administrative oversight necessary and stay focused on the project until the plaque is delivered. We take care of the details.
-        </p>
-      </article>
 
-      <article id="commissioning">
-        <h2>Commissioning</h2>
-        <p>
-          Commissioning (Cx) is a quality control process. Although the buildings Mechanical, Electrical and Plumbing (MEP) systems are made up of standard components the arrangements of these components and interaction of controls will be unique for each building. RBGB, as Cx Professional, will review the project MEP design for operational and maintenance accessibility, check that the design documents are compete, and prepare test procedures based on the MEP systems design criteria. Once construction starts, RBGB will visit the site to observe installation practices, confirm specified equipment is installed, and maintain a record of any issues identified. Once the systems are fully installed, started, and adjusted, RBGB will observe system operation based on the step-by-step test procedures previously developed.
-        </p>
-      </article>
+    <!-- SERVICES DETAIL SECTIONS -->
 
-      <article id="energy-modeling">
-        <h2>Energy Modeling</h2>
-        <p>
-          Energy simulation, or modeling, is one of the greatest building design tools ever invented. It is used to meet energy code, get LEED points, and to report tax credits, but is best used strategically to optimize building performance. This is accomplished by simulating all building components and scenarios to see exactly where maximum energy efficiencies occur. The model analyzes “whole-building” performance.
-        </p>
-      </article>
+    <section class="service-detail-section" id="leed">
+      <button class="service-image-button" data-modal="modal-leed">
+        <img src="assets/images/LEED-1.png" alt="LEED Administration Plus placeholder">
+      </button>
 
-      <article id="energy-audits">
-        <h2>Energy Audits</h2>
-        <p>
-          The audit reveals cost saving opportunities and identifies waste. Many of the efficiency measures are classified as “no cost-low cost” and can be implemented quickly. Others require capital and/or resource investment, and these are typically quantified through first cost, return on investment, benefit, and life-cycle cost filters in order to evaluate action steps. The audit provides the owner with useful information for making decisions.
-          A common result of the audit is owner awareness of how the physical building performance affects budget, property value, indoor environmental quality, and user productivity. In many instances, energy, water, and cost savings are realized through occupant training and behavior modification. RBGB provides a facilitated meeting after each audit to present and explain the findings and help the owner move further down the road to sustainable operations.
-        </p>
-      </article>
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-leed">
+          <h2>LEED Administration Plus</h2>
+        </button>
 
-      <article id="facility-management">
-        <h2>Sustainable Facility Management</h2>
-        <p>
-          RBGB provides professional facility management oversight. Our servicers include budgeting, strategic planning, performance benchmarking, preventative maintenance and management of service providers. It is an ongoing activity that must be supported at the highest levels of the organization. The modern facility management mission is to enhance the productivity of the building occupants and may cover many areas beyond the physical plant such as space planning, security, business continuity, purchasing, and pest control.
-          A major part of the facility management function is developing procedures and then implementing the plans with vigilance. RBGB provides custom tailored plans for sustainable facility operations based on the needs, culture and resources of the client. We build and implement a plan from within that can be adopted by existing staff, new hires, or we can remotely oversee and perform the facility manager role from our site using cloud-based technologies and feet on the ground practicality.
+        <p class="service-tags">
+          Advanced Green Buildings / LEED Documentation / Integrated Project Delivery
         </p>
-      </article>
 
-      <article id="training">
-        <h2>Training & Workshops</h2>
         <p>
-          RBGB President, Jeff Ross-Bain, has conducted numerous presentations worldwide. As a part of the RBGB mission to share knowledge and encourage sustainable practices, we can provide tailored learning experiences for a variety of topics, skill levels, and preferred length.
-          Jeff has conducted 1 to 3-day workshops, presented at national and international conferences (ASHRAE, GreenBuild, ACREX-India, IFMA), other professional organizations, and currently teaches a class at Georgia Tech for the Master’s program in the College of Building Construction.
+          We guide project teams through the green building process with practical expertise, LEED credit strategy, documentation oversight, and a collaborative approach that keeps the project moving until certification is achieved.
         </p>
-      </article>
+
+        <button class="text-link-button" data-modal="modal-leed">Read more</button>
+      </div>
     </section>
+
+
+    <section class="service-detail-section reverse" id="commissioning">
+      <button class="service-image-button" data-modal="modal-commissioning">
+        <img src="assets/images/complete-guide-to-building-commissioning-in-construction.jpg" alt="Commissioning placeholder">
+      </button>
+
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-commissioning">
+          <h2>Commissioning</h2>
+        </button>
+
+        <p class="service-tags">
+          Design Review / Installation Verification / Performance Testing
+        </p>
+
+        <p>
+          Commissioning verifies that building systems are designed, installed, tested, and operating as intended. We support both new and existing buildings through review, observation, testing, issue tracking, and handover documentation.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-commissioning">Read more</button>
+      </div>
+    </section>
+
+
+    <section class="service-detail-section" id="energy-modeling">
+      <button class="service-image-button" data-modal="modal-energy-modeling">
+        <img src="assets/images/eQuest2014logo-Transparent.png" alt="Energy Modeling placeholder">
+      </button>
+
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-energy-modeling">
+          <h2>Energy Modeling</h2>
+        </button>
+
+        <p class="service-tags">
+          Whole-building Simulation / Energy Strategy / Cost Optimization
+        </p>
+
+        <p>
+          Energy modeling helps teams test design scenarios, evaluate efficiency measures, support code and LEED goals, and make data-backed decisions that improve performance and may reduce construction costs.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-energy-modeling">Read more</button>
+      </div>
+    </section>
+
+
+    <section class="service-detail-section reverse" id="energy-audits">
+      <button class="service-image-button" data-modal="modal-energy-audits">
+        <img src="assets/images/ashare-logo-768x531.webp" alt="Energy Audits placeholder">
+      </button>
+
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-energy-audits">
+          <h2>Energy Audits</h2>
+        </button>
+
+        <p class="service-tags">
+          Utility Analysis / Field Observations / Savings Roadmap
+        </p>
+
+        <p>
+          Energy audits compare actual building performance against expected performance, reveal cost-saving opportunities, and provide owners with a clear roadmap for improving energy, water, operations, and occupant outcomes.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-energy-audits">Read more</button>
+      </div>
+    </section>
+
+
+    <section class="service-detail-section" id="facility-management">
+      <button class="service-image-button" data-modal="modal-facility-management">
+        <img src="assets/images/ifma-logo_no-tag.svg" alt="Sustainable Facility Management placeholder">
+      </button>
+
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-facility-management">
+          <h2>Sustainable Facility Management</h2>
+        </button>
+
+        <p class="service-tags">
+          Operations Planning / Benchmarking / Sustainable Building Care
+        </p>
+
+        <p>
+          We help owners reduce operating costs, improve occupant productivity, extend equipment life, and develop practical sustainable operations plans that can be adopted by internal teams or supported remotely.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-facility-management">Read more</button>
+      </div>
+    </section>
+
+
+    <section class="service-detail-section reverse" id="training">
+      <button class="service-image-button" data-modal="modal-training">
+        <img src="assets/images/free-photo-of-business-training-course.jpeg" alt="Training and Workshops placeholder">
+      </button>
+
+      <div class="service-detail-copy">
+        <button class="service-heading-button" data-modal="modal-training">
+          <h2>Training & Workshops</h2>
+        </button>
+
+        <p class="service-tags">
+          Custom Workshops / LEED Charrettes / Energy and Commissioning Training
+        </p>
+
+        <p>
+          We provide tailored learning experiences for project teams, owners, students, and professional groups across green building, LEED, commissioning, energy modeling, energy audits, and facility operations.
+        </p>
+
+        <button class="text-link-button" data-modal="modal-training">Read more</button>
+      </div>
+    </section>
+
   </main>
+
+
+  <!-- OVERLAY MODALS -->
+
+  <div class="service-modal" id="modal-leed">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>LEED Administration Plus</h2>
+
+      <h3>Advanced High-performance Green Buildings</h3>
+      <h3>Experience, Competence, and Knowledge</h3>
+      <h3>LEED Administration Experts</h3>
+
+      <p>
+        The term “green building” covers a wide range of issues, concepts, perceptions and technologies. RBGB leadership has been involved in this field exclusively since 2001 and has developed a deep and broad understanding of the topic. Combining this breadth of knowledge with technical competency, passion, and a practical approach, we provide the client with the highest levels of green building expertise available.
+      </p>
+
+      <p>
+        The green building process demands collaborative and creative input from a variety of disciplines. Team members must be willing to emerge from traditional silos and take a seat at the table, explore options, and be creative. The term for this approach is Integrated Project Delivery, or IPD. RBGB promotes, encourages, and facilitates IPD as a sensible approach under all types of project team scenarios.
+      </p>
+
+      <p>
+        RBGB has been involved in over 80 LEED projects and has had direct project administrative control and performed energy models for LEED Certified, Silver, Gold and Platinum buildings. We are fully experienced with the intricacies of LEED credit requirements, documentation protocols, and the LEED submittal and review process. We provide all the administrative oversight necessary and stay focused on the project until the plaque is delivered. We take care of the details.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="service-modal" id="modal-commissioning">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>Commissioning</h2>
+
+      <h3>Verify System Design / Confirm Installation / Test</h3>
+      <h3>New and Existing Building</h3>
+      <h3>End of Project Information Transfer</h3>
+
+      <p>
+        Commissioning, or Cx, is a quality control process. Although building Mechanical, Electrical and Plumbing systems are made up of standard components, the arrangement of those components and the interaction of controls are unique for each building.
+      </p>
+
+      <p>
+        As the commissioning professional, RBGB reviews MEP design for operational and maintenance accessibility, checks that documents are complete, prepares test procedures, observes installation, confirms specified equipment, records issues, and observes system operation using step-by-step procedures.
+      </p>
+
+      <p>
+        The commissioning process can be applied to both new and existing buildings. New building commissioning follows defined milestones and schedules. Existing building commissioning often requires dealing with missing drawings, modified systems, calibration issues, repairs, and best-practice solutions. It is especially useful for cost savings, improved operation, and strategic planning.
+      </p>
+
+      <p>
+        At handover, owners often receive large amounts of documents that are rarely organized or used. RBGB works to ensure project documents are organized and that staff training is conducted according to owner expectations. Cloud-based commissioning software platforms help streamline this process.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="service-modal" id="modal-energy-modeling">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>Energy Modeling</h2>
+
+      <h3>Optimize Building Performance</h3>
+      <h3>Evaluate Energy Strategies</h3>
+      <h3>Reduce Construction Costs</h3>
+
+      <p>
+        Energy simulation, or modeling, is one of the greatest building design tools ever invented. It is used to meet energy code, gain LEED points, and report tax credits, but it is best used strategically to optimize building performance.
+      </p>
+
+      <p>
+        By simulating building components and scenarios, the model identifies where maximum energy efficiencies occur. It analyzes whole-building performance and helps determine the cost effectiveness of energy efficiency measures.
+      </p>
+
+      <p>
+        Used early, the model replaces speculation with data. Results are often interesting, surprising, and non-intuitive because each building is different.
+      </p>
+
+      <p>
+        Strategic energy modeling can also reduce construction costs. When building elements are modeled together, some code-minimum components may provide no additional energy benefit over lower-cost alternatives, while exceeding code minimums may sometimes reduce first costs.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="service-modal" id="modal-energy-audits">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>Energy Audits</h2>
+
+      <h3>Reduce Operating Costs</h3>
+      <h3>A Snapshot of Current Building Performance</h3>
+      <h3>Plan a Roadmap to Sustainability</h3>
+
+      <p>
+        An audit compares a building’s actual performance to its expected performance. The process includes discussions with building managers and users, field observations, research, calculations, utility bill analysis, review of maintenance procedures, and a final recommendation report for energy and water efficiency improvements.
+      </p>
+
+      <p>
+        The audit reveals cost-saving opportunities and identifies waste. Many measures are no-cost or low-cost and can be implemented quickly. Others require capital or resource investment and are evaluated through first cost, return on investment, benefit, and life-cycle cost filters.
+      </p>
+
+      <p>
+        The audit helps owners understand how physical building performance affects budget, property value, indoor environmental quality, and user productivity. In many cases, energy, water, and cost savings can be achieved through occupant training and behavior change.
+      </p>
+
+      <p>
+        RBGB provides a facilitated meeting after each audit to present and explain the findings and help the owner move further down the road to sustainable operations.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="service-modal" id="modal-facility-management">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>Sustainable Facility Management</h2>
+
+      <h3>Reduce Operating Costs</h3>
+      <h3>Improve Occupant Productivity</h3>
+      <h3>LEED for Existing Buildings O&M</h3>
+
+      <p>
+        Buildings and their systems are complicated, need continuous care, and are expensive. Without professional facility management practices, operating costs rise, equipment life shortens, indoor environmental quality suffers, and staff move from one emergency to the next.
+      </p>
+
+      <p>
+        Good facility operations save money while supporting the mission and values of the organization. RBGB provides professional facility management oversight, including budgeting, strategic planning, performance benchmarking, preventative maintenance, and management of service providers.
+      </p>
+
+      <p>
+        Modern facility management enhances occupant productivity and can also include space planning, security, business continuity, purchasing, and pest control.
+      </p>
+
+      <p>
+        RBGB develops custom plans for sustainable facility operations based on the client’s needs, culture, and resources. These plans can be adopted by existing staff, new hires, or remotely overseen using cloud-based technologies and practical field support.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="service-modal" id="modal-training">
+    <div class="modal-panel">
+      <button class="modal-close">×</button>
+      <h2>Training & Workshops</h2>
+
+      <p>
+        RBGB President Jeff Ross-Bain has conducted numerous presentations worldwide. As part of the RBGB mission to share knowledge and encourage sustainable practices, we provide tailored learning experiences for a variety of topics, skill levels, and preferred lengths.
+      </p>
+
+      <p>
+        Jeff has conducted one- to three-day workshops, presented at national and international conferences including ASHRAE, GreenBuild, ACREX-India, and IFMA, and teaches a class at Georgia Tech for the Master’s program in the College of Building Construction.
+      </p>
+
+      <h3>Common training topics include:</h3>
+
+      <ul>
+        <li>A Metric for Measuring Facility Management Quality</li>
+        <li>ASHRAE Standard 189.1</li>
+        <li>ASHRAE Standard 90.1</li>
+        <li>Energy Modeling — Overview and Starter Course</li>
+        <li>Energy Audits — Overview</li>
+        <li>LEED V4 — Deep Dive into Materials</li>
+        <li>Owner’s Project Requirements workshop and interview</li>
+        <li>LEED charrette for goal setting and planning</li>
+        <li>Contractor-based LEED procedures and documentation</li>
+        <li>Commissioning Process Overview</li>
+      </ul>
+
+      <p>
+        This represents a sampling of what we offer. We are always willing to customize training to fit your needs.
+      </p>
+    </div>
+  </div>
+
 
   <footer>
     <p>© 2026 Ross-Bain Green Building, LLC. All rights reserved.</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
