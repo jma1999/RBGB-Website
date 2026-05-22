@@ -582,7 +582,7 @@ body {
   border-right: 2px solid rgba(75, 95, 75, 0.45);
   border-bottom: 2px solid rgba(75, 95, 75, 0.45);
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1;
   letter-spacing: -0.04em;
   color: #4b5f4b;
