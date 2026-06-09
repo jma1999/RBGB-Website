@@ -1680,7 +1680,7 @@ body.modal-open {
 
 .resources-hero h1 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3.4rem, 7vw, 7rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
   font-weight: 500;
@@ -1743,7 +1743,7 @@ body.modal-open {
 
 .resource-card h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
   font-weight: 500;
@@ -1784,7 +1784,7 @@ body.modal-open {
 
 .course-detail-intro h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3.4rem, 6vw, 6.8rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
   font-weight: 500;
@@ -1856,7 +1856,7 @@ body.modal-open {
 
 .course-module h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1;
   letter-spacing: -0.045em;
   font-weight: 500;
@@ -1937,7 +1937,7 @@ body.modal-open {
 
 .lesson-hero h1 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
   font-weight: 500;
@@ -1995,7 +1995,7 @@ body.modal-open {
 .lesson-section-heading h2,
 .lesson-checklist-section h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3.2rem, 5.5vw, 6rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
   font-weight: 500;
@@ -2036,7 +2036,7 @@ body.modal-open {
 
 .lesson-objective-grid h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3vw, 3.3rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
   font-weight: 500;
@@ -2087,7 +2087,7 @@ body.modal-open {
 
 .lesson-module-card h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.2rem, 3.4vw, 3.8rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
   font-weight: 500;
@@ -2181,7 +2181,7 @@ body.modal-open {
 
 .lesson-download-card h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
   font-weight: 500;
