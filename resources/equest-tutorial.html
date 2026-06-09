@@ -13,102 +13,294 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="project-detail-body">
+<body class="resource-course-body">
 
   <a href="../resources.html" class="project-close-link" aria-label="Back to resources">
     Close
   </a>
 
-  <main class="project-detail-page resource-detail-page">
+  <main class="resource-course-page">
 
-    <section class="project-detail-copy resource-detail-copy">
-      <p class="project-status">Internal Training / Energy Modeling</p>
+    <!-- OPENING SPLIT SCREEN -->
+    <section class="resource-opening-split">
 
-      <h1>Energy Modeling in eQUEST</h1>
+      <div class="resource-opening-copy">
+        <p class="project-status">Internal Training / Energy Modeling</p>
 
-      <p class="project-meta">
-        Beginner Course | eQUEST Workflow | New Hire Resource
-      </p>
+        <h1>Energy Modeling in eQUEST</h1>
 
-      <p>
-        This course introduces new hires to the role of energy modeling in high-performance building projects, with a practical focus on eQUEST workflows, project setup, assumptions, simulation outputs and quality review.
-      </p>
+        <p class="project-meta">
+          Beginner Course | eQUEST Workflow | New Hire Resource
+        </p>
 
-      <p>
-        The goal is not only to learn the software, but to understand how an energy model supports code compliance, LEED documentation, design decisions, energy strategy and performance optimization.
-      </p>
+        <p>
+          This course introduces new hires to the role of energy modeling in high-performance building projects, with a practical focus on eQUEST workflows, project setup, assumptions, simulation outputs and quality review.
+        </p>
 
-      <div class="resource-detail-modules">
-
-        <article>
-          <span>01</span>
-          <div>
-            <h2>Introduction to Energy Modeling</h2>
-            <p>What an energy model is, why it is used, and how it supports sustainable building decisions.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>02</span>
-          <div>
-            <h2>Getting Started with eQUEST</h2>
-            <p>Overview of the interface, project setup, wizard workflow, file organization and common beginner mistakes.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>03</span>
-          <div>
-            <h2>Geometry, Zoning and Envelope</h2>
-            <p>How to define building shape, floor areas, thermal zones, walls, roofs, windows and orientation.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>04</span>
-          <div>
-            <h2>Schedules, Loads and Internal Gains</h2>
-            <p>How occupancy, lighting, plug loads, equipment and operating hours affect building energy performance.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>05</span>
-          <div>
-            <h2>HVAC Systems and Controls</h2>
-            <p>Introduction to system selection, efficiencies, ventilation, economizers and basic control assumptions.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>06</span>
-          <div>
-            <h2>Running Simulations and Reading Outputs</h2>
-            <p>How to run the model, review errors, check unmet hours and interpret energy results by end-use category.</p>
-            <a href="#">Add tutorial link</a>
-          </div>
-        </article>
-
-        <article>
-          <span>07</span>
-          <div>
-            <h2>Model QA/QC and Documentation</h2>
-            <p>How to review assumptions, check results, document inputs and prepare outputs for project use.</p>
-            <a href="#">Add checklist link</a>
-          </div>
-        </article>
-
+        <p>
+          The goal is not only to learn the software, but to understand how an energy model supports code compliance, LEED documentation, design decisions, energy strategy and performance optimization.
+        </p>
       </div>
+
+      <div class="resource-opening-image">
+        <img src="../assets/images/Ithaca_UBEM_cropped.png" alt="Energy modeling in eQUEST course placeholder">
+      </div>
+
     </section>
 
 
-    <section class="project-detail-image">
-      <img src="../assets/images/Ithaca_UBEM_cropped.png" alt="Energy modeling in eQUEST course placeholder">
+    <!-- COURSE CONTENT -->
+    <section class="tutorial-content">
+
+      <div class="tutorial-intro-block">
+        <p class="section-kicker left-kicker">Course Path</p>
+        <h2>From project information to model results.</h2>
+        <p>
+          Use this page as a working tutorial. Each section can later be updated with screenshots from eQUEST, short walkthrough videos, downloadable files, and project-specific notes.
+        </p>
+      </div>
+
+
+      <!-- MODULE 01 -->
+      <article class="tutorial-module" id="module-01">
+        <div class="tutorial-module-heading">
+          <span>01</span>
+          <h2>Introduction to Energy Modeling</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Energy modeling is the process of simulating a building’s energy use based on geometry, envelope, schedules, internal loads, HVAC systems, controls and weather data.
+          </p>
+
+          <p>
+            In project work, an energy model can support LEED documentation, code compliance, tax analysis, design comparison, energy conservation measures and whole-building performance strategy.
+          </p>
+
+          <div class="tutorial-image-placeholder">
+            <p>Placeholder screenshot</p>
+            <span>Add an image showing an example eQUEST project or energy model output.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 02 -->
+      <article class="tutorial-module" id="module-02">
+        <div class="tutorial-module-heading">
+          <span>02</span>
+          <h2>Opening eQUEST and Starting a Project</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Start by opening eQUEST and creating a new project file. The wizard workflow is useful for setting up the main project assumptions before moving into detailed edit mode.
+          </p>
+
+          <ul>
+            <li>Create a new project.</li>
+            <li>Confirm the project name and file location.</li>
+            <li>Select the correct weather location.</li>
+            <li>Choose the appropriate building type and initial setup options.</li>
+          </ul>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>eQUEST opening screen / new project window</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>Project information setup window</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 03 -->
+      <article class="tutorial-module" id="module-03">
+        <div class="tutorial-module-heading">
+          <span>03</span>
+          <h2>Project Location, Weather File and Building Type</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            The project location and weather file are important because weather conditions drive heating, cooling, ventilation and load calculations.
+          </p>
+
+          <p>
+            Confirm the location carefully before continuing. If the weather file is wrong, the results can be misleading even if the rest of the model is built correctly.
+          </p>
+
+          <div class="tutorial-image-placeholder tall-placeholder">
+            <p>Placeholder screenshot</p>
+            <span>Add screenshot of weather file selection or location settings in eQUEST.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 04 -->
+      <article class="tutorial-module" id="module-04">
+        <div class="tutorial-module-heading">
+          <span>04</span>
+          <h2>Building Geometry and Zoning</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Geometry defines the shape, size and orientation of the building. Zoning determines how spaces are grouped thermally.
+          </p>
+
+          <ul>
+            <li>Confirm total floor area.</li>
+            <li>Check number of floors and floor-to-floor height.</li>
+            <li>Review orientation and building form.</li>
+            <li>Group similar spaces into reasonable thermal zones.</li>
+          </ul>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>Building footprint or shell setup</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>Zone setup or floor area input window</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 05 -->
+      <article class="tutorial-module" id="module-05">
+        <div class="tutorial-module-heading">
+          <span>05</span>
+          <h2>Envelope, Lighting, Loads and Schedules</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            The envelope and internal load assumptions strongly affect energy use. These inputs should be based on drawings, specifications, schedules, owner requirements or clearly documented assumptions.
+          </p>
+
+          <ul>
+            <li>Walls, roofs, windows and insulation values.</li>
+            <li>Glazing type, window-to-wall ratio and shading.</li>
+            <li>Lighting power density.</li>
+            <li>Plug loads and equipment loads.</li>
+            <li>Occupancy and operating schedules.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder">
+            <p>Placeholder screenshot</p>
+            <span>Add screenshot of envelope inputs, lighting schedules or internal load settings.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 06 -->
+      <article class="tutorial-module" id="module-06">
+        <div class="tutorial-module-heading">
+          <span>06</span>
+          <h2>HVAC Systems and Controls</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            HVAC system inputs should reflect the design documents or agreed modeling assumptions. The system type, efficiency, fan power, ventilation and control strategy can significantly affect model results.
+          </p>
+
+          <ul>
+            <li>Select the appropriate HVAC system type.</li>
+            <li>Input heating and cooling efficiencies.</li>
+            <li>Review ventilation assumptions.</li>
+            <li>Check fan power and control settings.</li>
+            <li>Confirm economizer and setback assumptions where applicable.</li>
+          </ul>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>HVAC system selection window</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>System efficiency or controls input window</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 07 -->
+      <article class="tutorial-module" id="module-07">
+        <div class="tutorial-module-heading">
+          <span>07</span>
+          <h2>Running the Simulation and Reading Outputs</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            After the model is built, run the simulation and review the output reports. Do not only look at the final energy number. Check errors, warnings, unmet load hours and end-use breakdowns.
+          </p>
+
+          <ul>
+            <li>Run the simulation.</li>
+            <li>Review error and warning messages.</li>
+            <li>Check unmet heating and cooling hours.</li>
+            <li>Review annual energy use by end-use category.</li>
+            <li>Compare results against expectations or benchmark data.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder tall-placeholder">
+            <p>Placeholder screenshot</p>
+            <span>Add screenshot of simulation results, error report or end-use energy output.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- MODULE 08 -->
+      <article class="tutorial-module" id="module-08">
+        <div class="tutorial-module-heading">
+          <span>08</span>
+          <h2>QA/QC and Documentation</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            A model is only useful if the assumptions are clear and the results are reasonable. Before sharing outputs, review the model carefully and document where the inputs came from.
+          </p>
+
+          <ul>
+            <li>Check model inputs against drawings and specifications.</li>
+            <li>Confirm assumptions that were not available in documents.</li>
+            <li>Review reasonableness of results.</li>
+            <li>Document key inputs, sources and notes.</li>
+            <li>Prepare a summary for internal or client review.</li>
+          </ul>
+
+          <div class="tutorial-download-row">
+            <a href="#">Add assumptions log</a>
+            <a href="#">Add QA/QC checklist</a>
+            <a href="#">Add sample output report</a>
+          </div>
+        </div>
+      </article>
+
+
+      <div class="tutorial-end-link">
+        <a href="../resources.html" class="back-to-resources">← Back to Resources</a>
+      </div>
+
     </section>
 
   </main>

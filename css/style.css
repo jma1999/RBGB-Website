@@ -2317,3 +2317,289 @@ body.modal-open {
     gap: 8px;
   }
 }
+
+/* ================================
+   EQUEST COURSE PAGE
+   Opening image only + tutorial content
+================================ */
+
+.resource-course-body {
+  background: #f4f2ec;
+  color: #4b5f4b;
+  overflow-x: hidden;
+}
+
+.resource-course-page {
+  background: #f4f2ec;
+}
+
+
+/* Opening split screen */
+
+.resource-opening-split {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f4f2ec;
+}
+
+.resource-opening-copy {
+  min-height: 100vh;
+  padding: 120px 70px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.resource-opening-copy h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+  font-weight: 500;
+  color: #4b5f4b;
+  margin-bottom: 28px;
+}
+
+.resource-opening-copy p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 1.55vw, 1.65rem);
+  line-height: 1.32;
+  color: #243024;
+  max-width: 680px;
+  margin: 0 auto 22px;
+}
+
+.resource-opening-copy .project-status,
+.resource-opening-copy .project-meta {
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #4b5f4b;
+}
+
+.resource-opening-image {
+  height: 100vh;
+}
+
+.resource-opening-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Tutorial content */
+
+.tutorial-content {
+  width: min(1280px, 90vw);
+  margin: 0 auto;
+  padding: 130px 0 120px;
+}
+
+.tutorial-intro-block {
+  max-width: 900px;
+  margin-bottom: 95px;
+}
+
+.tutorial-intro-block h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  color: #4b5f4b;
+  margin-bottom: 30px;
+}
+
+.tutorial-intro-block p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.3;
+  color: #243024;
+}
+
+
+/* Tutorial modules */
+
+.tutorial-module {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 80px;
+  padding: 85px 0;
+  border-top: 1px solid rgba(75, 95, 75, 0.25);
+}
+
+.tutorial-module:last-of-type {
+  border-bottom: 1px solid rgba(75, 95, 75, 0.25);
+}
+
+.tutorial-module-heading {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+}
+
+.tutorial-module-heading span {
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #4b5f4b;
+  margin-bottom: 22px;
+}
+
+.tutorial-module-heading h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+  color: #4b5f4b;
+}
+
+.tutorial-module-copy p,
+.tutorial-module-copy li {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 1.75vw, 1.85rem);
+  line-height: 1.32;
+  color: #243024;
+}
+
+.tutorial-module-copy p {
+  margin-bottom: 24px;
+}
+
+.tutorial-module-copy ul {
+  margin: 8px 0 34px;
+  padding-left: 24px;
+}
+
+.tutorial-module-copy li {
+  margin-bottom: 12px;
+}
+
+
+/* Screenshot placeholders */
+
+.tutorial-image-placeholder {
+  min-height: 360px;
+  margin-top: 42px;
+  background:
+    linear-gradient(135deg, rgba(75, 95, 75, 0.08), rgba(75, 95, 75, 0.18));
+  border: 1px dashed rgba(75, 95, 75, 0.45);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 36px;
+  color: #4b5f4b;
+}
+
+.tutorial-image-placeholder p {
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #4b5f4b;
+}
+
+.tutorial-image-placeholder span {
+  display: block;
+  max-width: 420px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: #243024;
+}
+
+.tall-placeholder {
+  min-height: 520px;
+}
+
+.tutorial-screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.tutorial-screenshot-grid .tutorial-image-placeholder {
+  margin-top: 0;
+  min-height: 320px;
+}
+
+
+/* Download links */
+
+.tutorial-download-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.tutorial-download-row a,
+.back-to-resources {
+  display: inline-block;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: #4b5f4b;
+  border-bottom: 1px solid #4b5f4b;
+  padding-bottom: 5px;
+}
+
+.tutorial-download-row a:hover,
+.back-to-resources:hover {
+  opacity: 0.6;
+}
+
+.tutorial-end-link {
+  padding-top: 80px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .resource-opening-split {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-opening-copy {
+    min-height: auto;
+    padding: 110px 28px 60px;
+  }
+
+  .resource-opening-image {
+    height: 65vh;
+  }
+
+  .tutorial-content {
+    padding: 90px 0;
+  }
+
+  .tutorial-module {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 70px 0;
+  }
+
+  .tutorial-module-heading {
+    position: relative;
+    top: auto;
+  }
+
+  .tutorial-screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-image-placeholder,
+  .tall-placeholder {
+    min-height: 320px;
+  }
+}
