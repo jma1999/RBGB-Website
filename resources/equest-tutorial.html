@@ -30,15 +30,15 @@
         <h1>Energy Modeling in eQUEST</h1>
 
         <p class="project-meta">
-          Beginner Course | eQUEST Workflow | New Hire Resource
+          ASHRAE 90.1 Appendix G | Proposed + Baseline Models | Design Development Wizard
         </p>
 
         <p>
-          This course introduces new hires to the role of energy modeling in high-performance building projects, with a practical focus on eQUEST workflows, project setup, assumptions, simulation outputs and quality review.
+          This course breaks down an eQUEST model step by step through the LEED energy modeling process. We will model a building using the Design Development Wizard, develop the proposed building, create the Appendix G baseline model, run simulations, review results, and prepare the reports needed for LEED submission.
         </p>
 
         <p>
-          The goal is not only to learn the software, but to understand how an energy model supports code compliance, LEED documentation, design decisions, energy strategy and performance optimization.
+          The goal is not only to learn the software, but also to understand the relationship between the baseline and proposed models; we will also understand how energy models support code compliance, LEED documentation, design decisions, energy strategy and performance optimization.
         </p>
       </div>
 
@@ -54,244 +54,659 @@
 
       <div class="tutorial-intro-block">
         <p class="section-kicker left-kicker">Course Path</p>
-        <h2>From project information to model results.</h2>
+        <h2>From design documents to LEED energy reports.</h2>
         <p>
-          Use this page as a working tutorial. Each section can later be updated with screenshots from eQUEST, short walkthrough videos, downloadable files, and project-specific notes.
+          This tutorial starts with design documents and ends with the eQUEST reports and supporting documentation required for a LEED energy model review. The workflow follows the logic of ASHRAE 90.1 Appendix G: first build the proposed model, then create the baseline model by modifying the proposed model according to Appendix G rules.
         </p>
       </div>
 
 
-      <!-- MODULE 01 -->
-      <article class="tutorial-module" id="module-01">
+      <!-- COURSE ROADMAP -->
+      <section class="tutorial-roadmap">
+        <p class="section-kicker left-kicker">Course Roadmap</p>
+
+        <div class="roadmap-grid">
+          <a href="#part-01">Part I<br><span>Getting Started</span></a>
+          <a href="#part-02">Part II<br><span>Proposed Building Setup</span></a>
+          <a href="#part-03">Part III<br><span>Baseline Building Setup</span></a>
+          <a href="#part-04">Part IV<br><span>LEED Review + Reports</span></a>
+        </div>
+      </section>
+
+
+      <!-- PART I -->
+      <article class="tutorial-module" id="part-01">
         <div class="tutorial-module-heading">
-          <span>01</span>
-          <h2>Introduction to Energy Modeling</h2>
+          <span>Part I</span>
+          <h2>Getting Started</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            Energy modeling is the process of simulating a building’s energy use based on geometry, envelope, schedules, internal loads, HVAC systems, controls and weather data.
+            Before opening eQUEST, understand what the model is being used for. For a LEED energy model, the purpose is not only to predict energy use, but to compare the proposed building against an ASHRAE 90.1 Appendix G baseline building.
           </p>
 
-          <p>
-            In project work, an energy model can support LEED documentation, code compliance, tax analysis, design comparison, energy conservation measures and whole-building performance strategy.
-          </p>
+          <div class="tutorial-callout">
+            <h3>Five things to know before modeling</h3>
+            <ul>
+              <li>The model needs both a proposed building and a baseline building.</li>
+              <li>The proposed model should follow the design documents.</li>
+              <li>The baseline model is not a real building; it is an Appendix G comparison building.</li>
+              <li>The proposed and baseline models should use the same simulation program, weather data, and energy rates.</li>
+              <li>The final LEED submission needs clear documentation, assumptions, outputs, and explanation of errors or warnings.</li>
+            </ul>
+          </div>
 
           <div class="tutorial-image-placeholder">
-            <p>Placeholder screenshot</p>
-            <span>Add an image showing an example eQUEST project or energy model output.</span>
+            <p>Screenshot / Diagram Placeholder</p>
+            <span>Add a simple diagram showing: Design Documents → Proposed Model → Baseline Model → LEED Reports.</span>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 02 -->
-      <article class="tutorial-module" id="module-02">
+      <!-- PART II INTRO -->
+      <article class="tutorial-module" id="part-02">
         <div class="tutorial-module-heading">
-          <span>02</span>
-          <h2>Opening eQUEST and Starting a Project</h2>
+          <span>Part II</span>
+          <h2>Starting the Proposed Building in eQUEST</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            Start by opening eQUEST and creating a new project file. The wizard workflow is useful for setting up the main project assumptions before moving into detailed edit mode.
+            The proposed building model represents the actual design. In this course, do not start with the Schematic Wizard. Start directly with the Design Development Wizard so the model can be developed with more detailed project inputs.
+          </p>
+
+          <div class="tutorial-callout important">
+            <h3>Important workflow decision</h3>
+            <p>
+              Start with the <strong>Design Development Wizard</strong>, not the Schematic Wizard. This gives better control over building shells, zones, HVAC systems, schedules, envelope values, lighting power density and project-specific inputs.
+            </p>
+          </div>
+
+          <div class="tutorial-image-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of the eQUEST start screen showing where to begin with the Design Development Wizard.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- STEP 01 -->
+      <article class="tutorial-module" id="new-file">
+        <div class="tutorial-module-heading">
+          <span>Step 01</span>
+          <h2>Start a New File in eQUEST</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Create a new eQUEST project file and save it in a clean project folder. Keep the file name clear and version-controlled so future proposed and baseline versions can be tracked.
           </p>
 
           <ul>
-            <li>Create a new project.</li>
-            <li>Confirm the project name and file location.</li>
-            <li>Select the correct weather location.</li>
-            <li>Choose the appropriate building type and initial setup options.</li>
+            <li>Create a new eQUEST project.</li>
+            <li>Save the file using a clear name, such as <strong>ProjectName_Proposed_v01</strong>.</li>
+            <li>Create folders for drawings, assumptions, screenshots, outputs and LEED reports.</li>
+            <li>Keep a separate assumptions log from the beginning.</li>
           </ul>
 
           <div class="tutorial-screenshot-grid">
             <div class="tutorial-image-placeholder">
               <p>Screenshot 01</p>
-              <span>eQUEST opening screen / new project window</span>
+              <span>New project / file creation window.</span>
             </div>
 
             <div class="tutorial-image-placeholder">
               <p>Screenshot 02</p>
-              <span>Project information setup window</span>
+              <span>Recommended project folder structure.</span>
             </div>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 03 -->
-      <article class="tutorial-module" id="module-03">
+      <!-- STEP 02 -->
+      <article class="tutorial-module" id="project-setup">
         <div class="tutorial-module-heading">
-          <span>03</span>
-          <h2>Project Location, Weather File and Building Type</h2>
+          <span>Step 02</span>
+          <h2>Set Project Location, Weather and Utility Rates</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            The project location and weather file are important because weather conditions drive heating, cooling, ventilation and load calculations.
+            Select the project location and weather file carefully. The weather file affects heating, cooling, ventilation and energy results. For Appendix G modeling, proposed and baseline models should use the same weather data and the same energy rates.
           </p>
 
-          <p>
-            Confirm the location carefully before continuing. If the weather file is wrong, the results can be misleading even if the rest of the model is built correctly.
-          </p>
+          <ul>
+            <li>Select the closest representative weather location.</li>
+            <li>Confirm climate zone for later baseline system decisions.</li>
+            <li>Enter utility rates or use an agreed project energy cost method.</li>
+            <li>Document the weather file and utility-rate source in the assumptions log.</li>
+          </ul>
 
           <div class="tutorial-image-placeholder tall-placeholder">
-            <p>Placeholder screenshot</p>
-            <span>Add screenshot of weather file selection or location settings in eQUEST.</span>
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of weather file selection, utility rate setup, or project location settings.</span>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 04 -->
-      <article class="tutorial-module" id="module-04">
+      <!-- STEP 03 -->
+      <article class="tutorial-module" id="building-shells">
         <div class="tutorial-module-heading">
-          <span>04</span>
-          <h2>Building Geometry and Zoning</h2>
+          <span>Step 03</span>
+          <h2>Create Building Shells and Draw the Building</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            Geometry defines the shape, size and orientation of the building. Zoning determines how spaces are grouped thermally.
+            Use the Design Development Wizard to create the building shell. This is where the basic geometry, floor areas, number of floors, floor heights and orientation are established.
           </p>
 
           <ul>
-            <li>Confirm total floor area.</li>
-            <li>Check number of floors and floor-to-floor height.</li>
-            <li>Review orientation and building form.</li>
-            <li>Group similar spaces into reasonable thermal zones.</li>
+            <li>Confirm gross square footage from drawings.</li>
+            <li>Confirm number of floors and floor-to-floor height.</li>
+            <li>Draw the building footprint carefully.</li>
+            <li>Check orientation against the site plan or north arrow.</li>
+            <li>Create the second floor or additional floors as needed.</li>
+            <li>Review the Project Navigator and building shell tree.</li>
           </ul>
 
           <div class="tutorial-screenshot-grid">
             <div class="tutorial-image-placeholder">
               <p>Screenshot 01</p>
-              <span>Building footprint or shell setup</span>
+              <span>Building shell setup in Design Development Wizard.</span>
             </div>
 
             <div class="tutorial-image-placeholder">
               <p>Screenshot 02</p>
-              <span>Zone setup or floor area input window</span>
+              <span>Building footprint or drawing window.</span>
             </div>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 05 -->
-      <article class="tutorial-module" id="module-05">
+      <!-- STEP 04 -->
+      <article class="tutorial-module" id="zones">
         <div class="tutorial-module-heading">
-          <span>05</span>
-          <h2>Envelope, Lighting, Loads and Schedules</h2>
+          <span>Step 04</span>
+          <h2>Create Custom Zones and Thermal Blocks</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            The envelope and internal load assumptions strongly affect energy use. These inputs should be based on drawings, specifications, schedules, owner requirements or clearly documented assumptions.
+            Zoning is one of the most important modeling decisions. For LEED modeling, zones should be simple enough to manage but accurate enough to represent major space types, schedules, exposure and HVAC service areas.
           </p>
 
           <ul>
-            <li>Walls, roofs, windows and insulation values.</li>
-            <li>Glazing type, window-to-wall ratio and shading.</li>
-            <li>Lighting power density.</li>
-            <li>Plug loads and equipment loads.</li>
-            <li>Occupancy and operating schedules.</li>
+            <li>Use custom zones where the default zones do not match the design.</li>
+            <li>Group similar spaces when they have similar schedules, loads and HVAC service.</li>
+            <li>Separate spaces with very different loads or schedules.</li>
+            <li>Rename spaces clearly so LEED reviewers can understand the model.</li>
+            <li>Create a thermal-block diagram for documentation.</li>
+          </ul>
+
+          <div class="tutorial-callout">
+            <h3>LEED documentation habit</h3>
+            <p>
+              Keep zone names readable. Avoid generic names like “Zone 1” or “Space 2.” Use names such as “Level 1 Office North,” “Conference Zone,” or “Corridor Core.”
+            </p>
+          </div>
+
+          <div class="tutorial-image-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot showing custom zones, thermal blocks or space renaming in eQUEST.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- STEP 05 -->
+      <article class="tutorial-module" id="systems-wizards">
+        <div class="tutorial-module-heading">
+          <span>Step 05</span>
+          <h2>Use System Setup Wizards and Assign Zones</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Set up the proposed HVAC system based on the design documents. The proposed model should reflect the actual system type, zoning, capacities, efficiencies, ventilation assumptions and controls where available.
+          </p>
+
+          <ul>
+            <li>Use the system setup wizard to create the proposed HVAC system.</li>
+            <li>Assign zones to the correct systems.</li>
+            <li>Set plant equipment where applicable.</li>
+            <li>Set domestic hot water system assumptions.</li>
+            <li>Check airside systems, waterside HVAC, pumps and fans.</li>
+            <li>Document any assumptions that are not available in the drawings.</li>
+          </ul>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>System Setup Wizard.</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>Assigning zones to HVAC systems.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- STEP 06 -->
+      <article class="tutorial-module" id="detailed-mode">
+        <div class="tutorial-module-heading">
+          <span>Step 06</span>
+          <h2>Move into Detailed Mode</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            After the main wizard inputs are complete, move into Detailed Mode to review and refine the model. Detailed Mode is where you clean up names, check schedules, adjust parameters and prepare the model for LEED-level review.
+          </p>
+
+          <ul>
+            <li>Review building shells, floors and spaces.</li>
+            <li>Rename spaces and zones clearly.</li>
+            <li>Check schedules for occupancy, lighting, plug loads and HVAC operation.</li>
+            <li>Review HVAC system assignments.</li>
+            <li>Confirm plant and domestic hot water inputs.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder tall-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of Detailed Mode showing project tree, spaces, systems and schedules.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- STEP 07 -->
+      <article class="tutorial-module" id="lighting-loads-people">
+        <div class="tutorial-module-heading">
+          <span>Step 07</span>
+          <h2>Lighting, Plug Loads, People and Ventilation</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Internal loads can strongly affect model results. For LEED, these inputs should be traceable to drawings, schedules, owner information, design assumptions or ASHRAE defaults where appropriate.
+          </p>
+
+          <ul>
+            <li>Set lighting power density using the correct method.</li>
+            <li>Use global parameter LPD where appropriate.</li>
+            <li>Set plug loads and equipment loads.</li>
+            <li>Set people density and occupancy schedules.</li>
+            <li>Set ventilation assumptions and outdoor air rates.</li>
+            <li>Check whether the space-by-space or whole-building method is being used.</li>
+          </ul>
+
+          <div class="tutorial-callout important">
+            <h3>Review-comment risk</h3>
+            <p>
+              Lighting, plug loads, schedules and ventilation are common sources of LEED review comments. Always document the source of each input.
+            </p>
+          </div>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>Lighting Power Density input.</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>People, plug load or ventilation input screen.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- STEP 08 -->
+      <article class="tutorial-module" id="envelope">
+        <div class="tutorial-module-heading">
+          <span>Step 08</span>
+          <h2>Window Setup, Materials and U-Values</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            The proposed envelope should match the design documents. This includes walls, roofs, floors, glazing, window-to-wall ratio, U-values, SHGC, reflectivity and other envelope assumptions.
+          </p>
+
+          <ul>
+            <li>Review window areas and window-to-wall ratio.</li>
+            <li>Enter glazing U-value and SHGC.</li>
+            <li>Enter wall, roof and floor constructions.</li>
+            <li>Check material layers and assembly U-values.</li>
+            <li>Document any assumptions where the design documents are incomplete.</li>
           </ul>
 
           <div class="tutorial-image-placeholder">
-            <p>Placeholder screenshot</p>
-            <span>Add screenshot of envelope inputs, lighting schedules or internal load settings.</span>
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of window inputs, material layers, construction assemblies or U-value settings.</span>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 06 -->
-      <article class="tutorial-module" id="module-06">
+      <!-- STEP 09 -->
+      <article class="tutorial-module" id="proposed-systems">
         <div class="tutorial-module-heading">
-          <span>06</span>
-          <h2>HVAC Systems and Controls</h2>
+          <span>Step 09</span>
+          <h2>Detailed System Setup</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            HVAC system inputs should reflect the design documents or agreed modeling assumptions. The system type, efficiency, fan power, ventilation and control strategy can significantly affect model results.
+            Refine the proposed HVAC model. Review system type, air handling units, fans, coils, boilers, domestic hot water, controls, efficiencies and system-specific parameters.
           </p>
 
           <ul>
-            <li>Select the appropriate HVAC system type.</li>
-            <li>Input heating and cooling efficiencies.</li>
-            <li>Review ventilation assumptions.</li>
-            <li>Check fan power and control settings.</li>
-            <li>Confirm economizer and setback assumptions where applicable.</li>
+            <li>Check air handling unit setup.</li>
+            <li>Confirm fan power and fan curves.</li>
+            <li>Set cooling and heating coils.</li>
+            <li>Set boiler and domestic hot water inputs.</li>
+            <li>Review efficiency and performance curves.</li>
+            <li>Check exhaust fans and room exhaust.</li>
+            <li>Review system specifics before simulation.</li>
           </ul>
 
           <div class="tutorial-screenshot-grid">
             <div class="tutorial-image-placeholder">
               <p>Screenshot 01</p>
-              <span>HVAC system selection window</span>
+              <span>Airside HVAC system settings.</span>
             </div>
 
             <div class="tutorial-image-placeholder">
               <p>Screenshot 02</p>
-              <span>System efficiency or controls input window</span>
+              <span>Boiler, DHW, fan or coil inputs.</span>
             </div>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 07 -->
-      <article class="tutorial-module" id="module-07">
+      <!-- STEP 10 -->
+      <article class="tutorial-module" id="simulate-proposed">
         <div class="tutorial-module-heading">
-          <span>07</span>
-          <h2>Running the Simulation and Reading Outputs</h2>
+          <span>Step 10</span>
+          <h2>Simulate the Proposed Building</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            After the model is built, run the simulation and review the output reports. Do not only look at the final energy number. Check errors, warnings, unmet load hours and end-use breakdowns.
+            Run the proposed model and review errors, warnings, unmet hours and end-use results. Do not move to the baseline model until the proposed model is stable and explainable.
           </p>
 
           <ul>
-            <li>Run the simulation.</li>
-            <li>Review error and warning messages.</li>
+            <li>Run the proposed simulation.</li>
+            <li>Review eQUEST error messages.</li>
             <li>Check unmet heating and cooling hours.</li>
-            <li>Review annual energy use by end-use category.</li>
-            <li>Compare results against expectations or benchmark data.</li>
+            <li>Review energy use by end-use category.</li>
+            <li>Check whether results are reasonable for the building type.</li>
+            <li>Save this as the clean proposed model before creating the baseline.</li>
           </ul>
 
           <div class="tutorial-image-placeholder tall-placeholder">
-            <p>Placeholder screenshot</p>
-            <span>Add screenshot of simulation results, error report or end-use energy output.</span>
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of simulation output, unmet hours report, error report or end-use summary.</span>
           </div>
         </div>
       </article>
 
 
-      <!-- MODULE 08 -->
-      <article class="tutorial-module" id="module-08">
+      <!-- PART III -->
+      <article class="tutorial-module" id="part-03">
         <div class="tutorial-module-heading">
-          <span>08</span>
-          <h2>QA/QC and Documentation</h2>
+          <span>Part III</span>
+          <h2>Creating the Baseline Building</h2>
         </div>
 
         <div class="tutorial-module-copy">
           <p>
-            A model is only useful if the assumptions are clear and the results are reasonable. Before sharing outputs, review the model carefully and document where the inputs came from.
+            The baseline model is created by modifying the proposed model according to ASHRAE 90.1 Appendix G. Do not create a completely unrelated model. The baseline should keep items that Appendix G requires to remain the same and modify only the prescribed baseline elements.
+          </p>
+
+          <div class="tutorial-callout important">
+            <h3>Recommended file workflow</h3>
+            <ul>
+              <li>Save a clean copy of the proposed model.</li>
+              <li>Duplicate it and rename the duplicate as the baseline model.</li>
+              <li>Modify the duplicate according to Appendix G baseline requirements.</li>
+              <li>Keep a clear list of every change made from proposed to baseline.</li>
+            </ul>
+          </div>
+
+          <div class="tutorial-image-placeholder">
+            <p>Screenshot / Diagram Placeholder</p>
+            <span>Add diagram showing Proposed Model → Save As → Baseline Model → Appendix G Modifications.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- BASELINE STEPS -->
+      <article class="tutorial-module" id="baseline-envelope">
+        <div class="tutorial-module-heading">
+          <span>Step 11</span>
+          <h2>Baseline Envelope and Glass</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Update the baseline envelope according to Appendix G rules. This may include changing glazing type, window-to-wall ratio, roof reflectivity, wall assemblies, roof assemblies and other envelope properties.
           </p>
 
           <ul>
-            <li>Check model inputs against drawings and specifications.</li>
-            <li>Confirm assumptions that were not available in documents.</li>
-            <li>Review reasonableness of results.</li>
-            <li>Document key inputs, sources and notes.</li>
-            <li>Prepare a summary for internal or client review.</li>
+            <li>Determine the applicable baseline envelope requirements.</li>
+            <li>Update glass type and glazing values.</li>
+            <li>Check percent glass and window-to-wall ratio.</li>
+            <li>Update walls, roof and floor constructions.</li>
+            <li>Update roof reflectivity and U-values where required.</li>
+            <li>Document every baseline envelope change.</li>
+          </ul>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>Baseline glass type or glazing input.</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>Baseline wall, roof or construction input.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="tutorial-module" id="baseline-lpd-loads">
+        <div class="tutorial-module-heading">
+          <span>Step 12</span>
+          <h2>Baseline Lighting, Loads and Schedules</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Review which inputs remain identical to proposed and which must be changed for baseline. Lighting power density is often modified according to ASHRAE 90.1 requirements, while many schedules and process loads may remain consistent unless Appendix G requires otherwise.
+          </p>
+
+          <ul>
+            <li>Update baseline LPD according to the selected method.</li>
+            <li>Review schedule consistency between proposed and baseline.</li>
+            <li>Keep process loads consistent unless a documented exception applies.</li>
+            <li>Check exterior lighting and parking lot lighting where applicable.</li>
+            <li>Document all baseline assumptions clearly.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of baseline lighting, schedule or exterior lighting inputs.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="tutorial-module" id="baseline-systems">
+        <div class="tutorial-module-heading">
+          <span>Step 13</span>
+          <h2>Baseline HVAC Systems</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Determine the baseline HVAC system type using Appendix G rules. Baseline system selection depends on factors such as building type, number of floors, conditioned floor area, residential or nonresidential use and climate zone.
+          </p>
+
+          <ul>
+            <li>Determine the correct baseline system type.</li>
+            <li>Create air handling units for required floors or zones.</li>
+            <li>Set airside parameters.</li>
+            <li>Set heating and cooling systems.</li>
+            <li>Set fan power, MERV filters and system efficiencies.</li>
+            <li>Set waterside HVAC, pumps, boilers and domestic hot water.</li>
+            <li>Check thermal block simplification and PTAC/PTHP assumptions where applicable.</li>
+          </ul>
+
+          <div class="tutorial-callout">
+            <h3>Baseline system warning</h3>
+            <p>
+              Do not simply copy the proposed HVAC system and call it baseline. Appendix G often requires a specific baseline system type even when the actual proposed design uses a different system.
+            </p>
+          </div>
+
+          <div class="tutorial-screenshot-grid">
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 01</p>
+              <span>Baseline system type setup.</span>
+            </div>
+
+            <div class="tutorial-image-placeholder">
+              <p>Screenshot 02</p>
+              <span>Baseline fan, coil, boiler or pump settings.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="tutorial-module" id="simulate-baseline">
+        <div class="tutorial-module-heading">
+          <span>Step 14</span>
+          <h2>Simulate the Baseline Building</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Run the baseline model and review it with the same discipline as the proposed model. Check errors, warnings, unmet hours, end-use results and major differences between proposed and baseline.
+          </p>
+
+          <ul>
+            <li>Run the baseline simulation.</li>
+            <li>Review errors and warnings.</li>
+            <li>Check unmet hours.</li>
+            <li>Compare end-use results against the proposed model.</li>
+            <li>Check whether savings make sense.</li>
+            <li>Revise assumptions if errors or unreasonable results appear.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder tall-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of baseline simulation output, end-use comparison or unmet hours report.</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PART IV -->
+      <article class="tutorial-module" id="part-04">
+        <div class="tutorial-module-heading">
+          <span>Part IV</span>
+          <h2>Energy Modeling for LEED</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            The final phase is about review, documentation and submission quality. A technically correct model can still receive review comments if the assumptions, reports and explanations are not clear.
+          </p>
+
+          <div class="tutorial-callout important">
+            <h3>LEED reviewer mindset</h3>
+            <p>
+              Make the model easy to review. Explain what changed between proposed and baseline, where inputs came from, how systems were selected, and why the results are reasonable.
+            </p>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="tutorial-module" id="leed-documentation">
+        <div class="tutorial-module-heading">
+          <span>Step 15</span>
+          <h2>Prepare LEED Documentation</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            ASHRAE 90.1 Appendix G documentation typically includes a project summary, model software and version, energy analysis results, project overview, energy-related features, compliance list, floor plans, elevations, thermal block diagrams, assumptions, input/output reports, unmet hours and error explanations.
+          </p>
+
+          <ul>
+            <li>Prepare project description and building-use summary.</li>
+            <li>Document software name and version.</li>
+            <li>Include proposed and baseline performance results.</li>
+            <li>Prepare end-use breakdowns.</li>
+            <li>Include floor plans and elevations.</li>
+            <li>Include thermal block diagrams.</li>
+            <li>Explain major assumptions.</li>
+            <li>Include input and output reports.</li>
+            <li>Explain errors, warnings or unmet-hour issues.</li>
           </ul>
 
           <div class="tutorial-download-row">
             <a href="#">Add assumptions log</a>
             <a href="#">Add QA/QC checklist</a>
-            <a href="#">Add sample output report</a>
+            <a href="#">Add LEED report template</a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="tutorial-module" id="review-comments">
+        <div class="tutorial-module-heading">
+          <span>Step 16</span>
+          <h2>Reduce LEED Review Comments</h2>
+        </div>
+
+        <div class="tutorial-module-copy">
+          <p>
+            Many review comments come from unclear assumptions, missing reports, inconsistent schedules, unexplained unmet hours, mismatched proposed/baseline inputs or baseline systems that do not follow Appendix G.
+          </p>
+
+          <ul>
+            <li>Check that proposed and baseline use the same weather file and rates.</li>
+            <li>Confirm proposed model matches design documents.</li>
+            <li>Confirm baseline model follows Appendix G rules.</li>
+            <li>Check that schedules are consistent where required.</li>
+            <li>Check LPD, plug loads, ventilation and process loads carefully.</li>
+            <li>Explain unmet hours and any unusual energy-use patterns.</li>
+            <li>Keep screenshots of key eQUEST windows for documentation.</li>
+          </ul>
+
+          <div class="tutorial-image-placeholder">
+            <p>Screenshot Placeholder</p>
+            <span>Add screenshot of final results comparison, LEED form, or review-comment response log.</span>
           </div>
         </div>
       </article>

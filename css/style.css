@@ -2603,3 +2603,93 @@ body.modal-open {
     min-height: 320px;
   }
 }
+
+/* ================================
+   EQUEST LEED COURSE ADDITIONS
+================================ */
+
+.tutorial-roadmap {
+  margin-bottom: 95px;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(75, 95, 75, 0.25);
+}
+
+.roadmap-grid a {
+  min-height: 170px;
+  padding: 28px;
+  background: #ebe7dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: #4b5f4b;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.roadmap-grid a span {
+  display: block;
+  margin-top: 10px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.roadmap-grid a:hover {
+  background: #4b5f4b;
+  color: #f4f2ec;
+}
+
+.tutorial-callout {
+  margin: 38px 0;
+  padding: 30px;
+  background: #ebe7dc;
+  border-left: 4px solid #4b5f4b;
+}
+
+.tutorial-callout.important {
+  background: #e1dccd;
+}
+
+.tutorial-callout h3 {
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #4b5f4b;
+  margin-bottom: 16px;
+}
+
+.tutorial-callout p,
+.tutorial-callout li {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 1.6vw, 1.65rem);
+  line-height: 1.32;
+  color: #243024;
+}
+
+.tutorial-callout ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.tutorial-callout li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 950px) {
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+}
