@@ -2627,7 +2627,7 @@ body.modal-open {
   flex-direction: column;
   justify-content: flex-end;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3vw, 3.3rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
   color: #4b5f4b;
